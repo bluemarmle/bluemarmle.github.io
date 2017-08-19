@@ -4,16 +4,16 @@
 
 <html>
 <head>
-    <title>BlueMarmle</title>  <!-- 网页标签，搜索引擎使用 -->
+    <title>{{ site.title }}</title>  <!-- 网页标签，搜索引擎使用 -->
 
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">   
     <meta name="author" conten="BlueMarmle">
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="generator" content="Visual Studio Code">
     <meta name="revised" content="bm,17/8/2017">
-    <meta name="description" content="">      
+    <meta name="description" content="{{ site.description }}">      
     <!-- all beginned with "meta" describes the site -->
-     <link rel="stylesheet" href="http://localhost:4000/assets/home.css">      <!-- 与css文件链接 -->
+     <link rel="stylesheet" href="{{ site.url }}/assets/home.css">      <!-- 与css文件链接 -->
      <!-- 定义超链接样式 -->
      <style>
         
@@ -51,30 +51,30 @@
 
     <!-- 头牌 字体居中 blog简述 -->
     <center><div>
-        <img id="head" src="http://localhost:4000/assets/img/head.png" height="50%" width="50%" >
+        <img id="head" src="{{ site.url }}/assets/img/head.png" height="50%" width="50%" >
         </div></center>
     
     <center><div id="toupai">
-        <h1>BlueMarmle</h1>     <!-- name of your site, can be replaced in file _config.yml -->
-        <img src="http://localhost:4000/assets/img/fenge3.png">
+        <h1>{{ site.title }}</h1>     <!-- name of your site, can be replaced in file _config.yml -->
+        <img src="{{ site.url }}/assets/img/fenge3.png">
         <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
         乙女、RPGゲーム感想、慢速攻略、生活碎碎念汇聚窝<br>
         <strong>※blog上所有图文内容未经允许不可转载</strong>
         </p>
  
         </div></center>
-    <center><img id="fenge" src="http://localhost:4000/assets/img/fenge1.png" width="70%"></center>
+    <center><img id="fenge" src="{{ site.url }}/assets/img/fenge1.png" width="70%"></center>
 
 
         
         <!-- index,list链接 -->
 
         <center><div class="daohang">
-            <img style="margin-bottom: -27%;" src="http://localhost:4000/assets/img/indexback.png" width="80%">
+            <img style="margin-bottom: -27%;" src="{{ site.url }}/assets/img/indexback.png" width="80%">
             <ul class="daohanglan">
-                <li class="daohanglist"><a class="dhl" href="http://localhost:4000/index.html">HOME</a></li>
-                <li class="daohanglist"><a class="dhl" href="http://localhost:4000/list.html">LIST</a></a></li>
-                <li class="daohanglist"><a class="dhl" href="http://localhost:4000/about.html">ABOUT</a></a></li>
+                <li class="daohanglist"><a class="dhl" href="{{ site.url }}/index.html">HOME</a></li>
+                <li class="daohanglist"><a class="dhl" href="{{ site.url }}/list.html">LIST</a></a></li>
+                <li class="daohanglist"><a class="dhl" href="{{ site.url }}/about.html">ABOUT</a></a></li>
             </ul>
         </div></center>
 
@@ -82,7 +82,7 @@
 
         <!-- 个人侧边介绍 -->
         <div id="self">
-            <center><img src="http://localhost:4000/assets/img/touxiang.png" width="85%"></center><br>
+            <center><img src="{{ site.url }}/assets/img/touxiang.png" width="85%"></center><br>
             <strong style="font-size: 1.6em">BlueMarmle</strong>
             <p class="selfdes" >
                 写博客顺便写<s>只会</s>简单代码<br>
@@ -91,30 +91,30 @@
                 大部分时间都在自言自语=w=<br>
             </p>
 
-            <img src="http://localhost:4000/assets/img/fenge2.png" width="100%">
+            <img src="{{ site.url }}/assets/img/fenge2.png" width="100%">
 
             <p>
                 <center><h3>进行中</h3></center>
                 <ul class="gmlist">
-                    <li><a class="barlist" href="http://atlus-vanillaware.jp/osl/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">奥丁领域</a></li>
-                    <li><a class="barlist" href="http://www.otomate.jp/collar_malice/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">Collar×Malice</a></li>
-                    <li><a class="barlist" href="http://www.otomate.jp/psychedelica/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">黑蝶のサイケデリカ</a></li>    
+                    <li><a class="barlist" href="http://atlus-vanillaware.jp/osl/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">奥丁领域</a></li>
+                    <li><a class="barlist" href="http://www.otomate.jp/collar_malice/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">Collar×Malice</a></li>
+                    <li><a class="barlist" href="http://www.otomate.jp/psychedelica/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">黑蝶のサイケデリカ</a></li>    
                 </ul>
                 
                 <center><h3>已预定</h3></center>
                 <ul class="gmlist">
-                    <li><a class="barlist" href="http://www.primula.jpn.com/taishoalicefd/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">大正×対称アリスHeads&Tails</a></li>
-                    <li><a class="barlist" href="http://www.daisy-daisy.in/products/sangoku2/index.php"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">三国恋战记 魏</a></li>
-                    <li><a class="barlist" href="http://www.gamecity.ne.jp/corda2ff/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">金色のコルダ2 ff</a></li>
-                    <li><a class="barlist" href="http://joqrextend.co.jp/extend/sidekicks/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">SideKicks！</a></li>
-                    <li><a class="barlist" href="http://www.honeybee-cd.com/un_vita/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">Un: Birthday Song another record</a></li>
+                    <li><a class="barlist" href="http://www.primula.jpn.com/taishoalicefd/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">大正×対称アリスHeads&Tails</a></li>
+                    <li><a class="barlist" href="http://www.daisy-daisy.in/products/sangoku2/index.php"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">三国恋战记 魏</a></li>
+                    <li><a class="barlist" href="http://www.gamecity.ne.jp/corda2ff/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">金色のコルダ2 ff</a></li>
+                    <li><a class="barlist" href="http://joqrextend.co.jp/extend/sidekicks/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">SideKicks！</a></li>
+                    <li><a class="barlist" href="http://www.honeybee-cd.com/un_vita/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">Un: Birthday Song another record</a></li>
                 </ul>
 
                 <center><h3>愿望单</h3></center>
                 <ul class="gmlist">
-                    <li><a class="barlist" href="http://hana-awase.net/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">華アワセ　いろは編</a></li>
-                    <li><a class="barlist" href="http://www.gungnir.co.jp/lily/flowers4/"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">Flowers 冬編</a></li>
-                    <li><a class="barlist" href="http://tetrascope.skr.jp/yu-as/top.html"><img src="http://localhost:4000/assets/img/aixin.png" width="5%">幽境のアステール</a></li>
+                    <li><a class="barlist" href="http://hana-awase.net/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">華アワセ　いろは編</a></li>
+                    <li><a class="barlist" href="http://www.gungnir.co.jp/lily/flowers4/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">Flowers 冬編</a></li>
+                    <li><a class="barlist" href="http://tetrascope.skr.jp/yu-as/top.html"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">幽境のアステール</a></li>
                 </ul><br>
                 
                 <center><h3>应援</h3></center>
@@ -130,19 +130,17 @@
                     <li>欢迎与我交换地址！=w=</li>
                 </ul><br>
 
-                <img src="http://localhost:4000/assets/img/fenge2.png" width="100%">
+                <img src="{{ site.url }}/assets/img/fenge2.png" width="100%">
             </p>
         </div>
             <!-- 个人侧边栏结束 -->
 
                 <!-- 目录 -->
                 <div id="menu">
-                <img src="http://localhost:4000/assets/img/indexicon.png" width="100%"><br>
-                
-                <a class="mulu" href="/2017-08-19-for-test/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="3%">19 Aug 2017&nbsp;&nbsp;Test</a><br>
-                
-                <a class="mulu" href="/2017-08-18-for-test-2/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="3%">18 Aug 2017&nbsp;&nbsp;for test 2 and</a><br>
-                
+                <img src="{{ site.url }}/assets/img/indexicon.png" width="100%"><br>
+                {% for post in site.posts %}
+                <a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/xiaohua.png" width="3%">{{ post.date | date_to_string }}&nbsp;&nbsp;{{ post.title }}</a><br>
+                {% endfor %}
                 </div>
 
 

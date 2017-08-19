@@ -1,0 +1,92 @@
+body{
+    background-color: white;
+    background-image: url(img/back.png);
+    background-repeat:repeat;
+    background-position: top;
+    background-position: center;
+    background-size: 100%;
+    font-family: "STHeiti Light","STXihei","NSimSun","SimSun","MS UI Gothic","MS Gothic";
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: Georgia;
+    color: #FFDB8D;
+    z-index: 2;
+    font-variant: small-caps;
+}
+
+p.jianshu{
+    font-size: 1em;
+    color: #FFC56D;
+    z-index: 2;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+}
+
+#menu{
+    line-height: 2em;
+    text-align: left;
+    margin-left:35%; 
+    margin-right: 10%;
+}
+
+a.mulu{
+    color: #483D8B;
+    margin-left: 15%;
+
+}
+
+#self{
+    margin-left: 8%;
+    margin-right: 65%;
+    padding-left: 5%;
+    padding-right: 3%;
+    border-right: medium;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #edebeb;
+    text-align: left;
+    color: #666666;
+    float: left;
+    position: absolute;
+}
+
+ul.gmlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+#footer{
+    background-color: #BC8F8F;
+    font-size: 0.5em;
+    color: white;
+    margin-top: 120%;
+}
+
+footer{
+    background-color: #BC8F8F;
+    font-size: 0.5em;
+    color: white;
+    margin-top: 5%;
+}
+
+
+div.daohang{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+a.dhl{
+    margin-top: 0;
+    margin-left: 0%;
+    margin-right:0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 12%;
+    padding-right: 12%;
+}

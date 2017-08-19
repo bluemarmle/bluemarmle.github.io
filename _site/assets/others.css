@@ -1,0 +1,57 @@
+body{
+    background-color: white;
+    background-image: url(img/back.png);
+    background-repeat:repeat;
+    background-position: top;
+    background-position: center;
+    background-size: 100%;
+    font-family: "STHeiti Light","STXihei","NSimSun","SimSun","MS UI Gothic","MS Gothic";
+}
+
+#pagehead{
+    margin-bottom: -8%;
+}
+
+div.daohang{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a.dhl{
+    margin-top: 0;
+    margin-left: 0%;
+    margin-right:0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+footer{
+    background-color: #BC8F8F;
+    font-size: 0.5em;
+    color: white;
+    padding: 0.2%;
+    margin-top: 5%;
+}
+
+p.listsm{
+    margin-top: 2%;
+    line-height: 1.7em;
+    color: #2F4F4F;
+}
+
+div.content{
+    margin-top: 8%;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-bottom: 20%;
+    line-height: 1.7em;
+}
+
+h4.page{
+    font-size: 1.5em;
+    color: #778899;
+    font-weight: normal;
+
+}

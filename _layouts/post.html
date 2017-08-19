@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BlueMarmle {{ page.title }}</title>
+        <!-- html基础设定，无需改动 -->
+        
+        <link rel="stylesheet" href="{{ site.url }}/assets/others.css">    <!-- 与CSS文件链接 -->
+        
+        <style>
+            /* 导航栏样式设定 */
+            .daohanglan{list-style-type: none; margin: 0; padding: 0;}
+            .daohanglist{display: inline;} /* 水平+块设定 */
+            .dhl:hover{text-decoration-line: none; color: #DB7093; background-color: FLORALWHITE; border-style: solid; border-width: 1px; }
+            .dhl:visited{text-decoration-line: none; color: #DB7093; border-style: solid; border-width: 1px; }
+            .dhl:link{text-decoration-line: none;color: #DB7093; border-style: solid; border-width: 1px;}
+            /* 导航栏设计结束 */
+        </style>
+    </head>
+
+    <body>
+                <!-- 此处用为post模板 -->
+                <div><center><img id="pagehead" src="{{ site.url }}/assets/img/pagehead.png" width="100%"></center></div>
+                <!-- 顶上图片确定 -->
+        
+                <!-- 导航条 -->
+                <center><div class="daohang">
+                    <ul class="daohanglan">
+                        <li class="daohanglist"><a class="dhl" href="{{ site.url }}/index.html">HOME</a></li>
+                        <li class="daohanglist"><a class="dhl" href="{{ site.url }}/list.html">LIST</a></a></li>
+                        <li class="daohanglist"><a class="dhl" href="{{ site.url }}/about.html">ABOUT</a></a></li>
+                    </ul>
+                </div></center>
+                <!-- 导航栏结束 -->
+
+                <!-- contents模板-->
+                <div class="content">
+                    <center>
+                        <h4 class="page"><img src="{{ site.url }}/assets/img/aixin.png" width="2.5%">{{ page.title }}</h4>
+                        <p style="color: #778899; font-size: 0.6em;">{{ page.date | date_to_string }}<br></p>
+                    </center>
+                    {{ content }}
+                </div>
+    </body>
+
+
+    <footer>
+            <center>Copyright© 2017 BlueMarmle</center>
+    </footer>
+</html>
