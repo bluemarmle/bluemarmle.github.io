@@ -1,3 +1,4 @@
+
 body{
     background-color: white;
     background-image: url(img/back.png);
@@ -5,7 +6,7 @@ body{
     background-position: top;
     background-position: center;
     background-size: 100%;
-    font-family: "STHeiti Light","STXihei","NSimSun","SimSun","MS UI Gothic","MS Gothic";
+    font-family: "STXihei","PingFang SC","Microsoft Yahei","HiraMinProN-W3","ヒラギノ明朝 ProN W3","MS UI Gothic","MS Gothic",sans-serif;
 }
 
 #pagehead{
@@ -28,9 +29,8 @@ a.dhl{
 }
 
 footer{
-    background-color: #BC8F8F;
     font-size: 0.5em;
-    color: white;
+    color: #BC8F8F;
     padding: 0.2%;
     margin-top: 5%;
 }
@@ -39,6 +39,8 @@ p.listsm{
     margin-top: 2%;
     line-height: 1.7em;
     color: #2F4F4F;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 div.content{
@@ -54,4 +56,11 @@ h4.page{
     color: #778899;
     font-weight: normal;
 
+}
+
+div.neirong{
+    padding-left:5%;
+    padding-right: 5%;
+    color: #67727e;
+    font-size: 1.4em;
 }

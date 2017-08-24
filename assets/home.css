@@ -5,7 +5,7 @@ body{
     background-position: top;
     background-position: center;
     background-size: 100%;
-    font-family: "STHeiti Light","STXihei","NSimSun","SimSun","MS UI Gothic","MS Gothic";
+    font-family: "STXihei","PingFang SC","Microsoft Yahei","HiraMinProN-W3","ヒラギノ明朝 ProN W3","MS UI Gothic","MS Gothic",sans-serif;
 }
 
 h1{
@@ -29,12 +29,12 @@ p.jianshu{
     line-height: 2em;
     text-align: left;
     margin-left:35%; 
-    margin-right: 10%;
+    margin-right: 6%;
 }
 
 a.mulu{
     color: #483D8B;
-    margin-left: 15%;
+    margin-left: 0%;
 
 }
 
@@ -60,17 +60,17 @@ ul.gmlist{
 }
 
 #footer{
-    background-color: #BC8F8F;
     font-size: 0.5em;
-    color: white;
-    margin-top: 120%;
+    color: #BC8F8F;
+    margin-top: 5%;
+    width: 100%;
 }
 
 footer{
-    background-color: #BC8F8F;
     font-size: 0.5em;
-    color: white;
+    color: #BC8F8F;
     margin-top: 5%;
+    width: 100%;
 }
 
 
@@ -89,4 +89,64 @@ a.dhl{
     padding-bottom: 2%;
     padding-left: 12%;
     padding-right: 12%;
+}
+
+img.muluicon{
+    margin-bottom: -10%;
+    margin-top: 5%;
+}
+
+p.icondate{
+    color: #E1E5EA;
+    font-size: 0.7em;
+    margin-left: 63%;
+    
+}
+
+.holder{
+    padding-right: 10%;
+    letter-spacing: 0.5em;
+    margin-bottom: -4%;
+}
+
+.holder a.jp-current,a.jp-current:hover{
+    border-style: solid;
+    border-width: 1px;
+    color: #DB7093;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0.5%;
+    margin-right: 2%;
+    background-color: #FFFAFA;
+}
+
+.holder a{
+    border-style: solid;
+    border-width: 1px;
+    color: #FFE4E1;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0.5%;
+    margin-right: 2%;
+}
+
+.holder a:hover{
+    border-style: solid;
+    border-width: 1px;
+    color: #DB7093;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0.5%;
+    margin-right: 2%;
+}
+
+.holder a{
+    cursor: default;
+}
+
+.holder a.jp-disabled,a.disabled:hover{
+    color: white;
 }

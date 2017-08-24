@@ -16,10 +16,6 @@
      <link rel="stylesheet" href="{{ site.url }}/assets/home.css">      <!-- 与css文件链接 -->
      <!-- 定义超链接样式 -->
      <style>
-        
-         .mulu:hover {color:#AC87AC;font-size: 1.2em;background-color: #f0f0ff;}
-         .mulu:link {color:#AC87AC;text-decoration: none;font-size: 1.2em;}
-         .mulu:visited {text-decoration: none;color: #AC87AC;font-size: 1.2em;}
 
          h3 {font-weight: normal; font-size: 0.8em; color: #BC8F8F;background-color: #fef5e7; padding: 0.5em;
         border-style: solid;
@@ -42,6 +38,30 @@
             .dhl:link{text-decoration-line: none;color: #DB7093; border-style: solid; border-width: 1px;}
             /* 导航栏设计结束 */
     </style>
+
+    <!-- 引用jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ site.url }}/assets/jPages.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div.holder").jPages({  
+            containerID : "itemContainer",  
+            perPage     : 6,
+            startPage   : 1,
+            startRang   : 1,
+            midRange    : 5,
+            endRange    : 1,
+            first       : "H",
+            last        : "T",
+            delay       : 100,
+            previous    : "⟵",
+            next        : "⟶"
+            });  
+        });
+    </script>
+
+
+
 </head>
 
 
@@ -103,6 +123,7 @@
                 
                 <center><h3>已预定</h3></center>
                 <ul class="gmlist">
+                    <li><a class="barlist" href="http://www.otomate.jp/7scarlet/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">7'scarlet</a></li>
                     <li><a class="barlist" href="http://www.primula.jpn.com/taishoalicefd/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">大正×対称アリスHeads&Tails</a></li>
                     <li><a class="barlist" href="http://www.daisy-daisy.in/products/sangoku2/index.php"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">三国恋战记 魏</a></li>
                     <li><a class="barlist" href="http://www.gamecity.ne.jp/corda2ff/"><img src="{{ site.url }}/assets/img/aixin.png" width="5%">金色のコルダ2 ff</a></li>
@@ -135,18 +156,22 @@
         </div>
             <!-- 个人侧边栏结束 -->
 
-                <!-- 目录 -->
-                <div id="menu">
-                <img src="{{ site.url }}/assets/img/indexicon.png" width="100%"><br>
+             <!-- 目录 -->
+        <div id="menu">
+
+            <img src="{{ site.url }}/assets/img/indexicon.png" width="92%"><br>
+            <center><div class="holder"></div></center>
+                <ul id="itemContainer" style="list-style: none;"> 
                 {% for post in site.posts %}
-                <a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/xiaohua.png" width="3%">{{ post.date | date_to_string }}&nbsp;&nbsp;{{ post.title }}</a><br>
+                <li><a class="mulu" href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/{{ post.icon }}.png" width="95%"></a>
+                <p class="icondate">{{ post.date | date_to_string }}</p></li>
                 {% endfor %}
-                </div>
-
-
-
-        
+                </ul>
+            <center><div class="holder"></div></center>
         </div>
+
+
+
         
 
         <div id="footer"><center>Copyright© 2017 BlueMarmle</center></div>

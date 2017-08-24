@@ -1,0 +1,108 @@
+body{
+    background-color: white;
+    background-image: url(img/back.png);
+    background-repeat:repeat;
+    background-position: top;
+    background-position: center;
+    background-size: 100%;
+    font-family: "STXihei","PingFang SC","Microsoft Yahei","HiraMinProN-W3","ヒラギノ明朝 ProN W3","MS UI Gothic","MS Gothic",sans-serif;
+}
+
+#pagehead{
+    margin-bottom: -8%;
+}
+
+div.daohang{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a.dhl{
+    margin-top: 0;
+    margin-left: 0%;
+    margin-right:0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+footer{
+    font-size: 0.5em;
+    color: #BC8F8F;
+    padding: 0.2%;
+    margin-top: 5%;
+}
+
+div.content{
+    margin-top: 8%;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-bottom: 20%;
+    line-height: 1.7em;
+}
+
+/* title设定 */
+h4.page{
+    font-size: 1.5em;
+    color: #778899;
+    font-weight: normal;
+
+}
+
+/* 正文样式设定 */
+div.neirong{
+    padding-left:5%;
+    padding-right: 5%;
+    color: #5d5e60;
+    font-family:  "STXihei","PingFang SC","Microsoft Yahei","HiraMinProN-W3","ヒラギノ明朝 ProN W3","MS UI Gothic","MS Gothic",sans-serif;
+}
+
+p{
+    text-indent: 2em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.6em;
+    background-image: url(img/titleback.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    text-indent: 14%;
+    padding: 4%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: #DB7093;
+    
+}
+
+h3{
+    font-size: 1.3em;
+    padding: 0.5em;
+    border-left-style: dotted;
+    border-left-width: 10px;
+    border-left-color: #FFF0F5;
+    text-indent: 3%;
+}
+
+/* 引用模块设定 */
+blockquote{
+    color: #999999;
+    background-color: #fcfcfc;
+    padding-left: 3%;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: #c3c4c5;
+}
+
+hr{
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
