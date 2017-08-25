@@ -5,7 +5,7 @@ permalink: /:year-:month-:day-:title/
 icon: collarmalice_adonis
 ---
 
-## 碎碎念
+## Chapter. 0
 
 *※此部分内容与其他页面相同，如已浏览过同类页面可直接跳到下一部分*
 
