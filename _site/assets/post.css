@@ -38,7 +38,7 @@ div.content{
     margin-top: 8%;
     margin-left: 16%;
     margin-right: 16%;
-    margin-bottom: 20%;
+    margin-bottom: 2%;
     line-height: 1.7em;
 }
 
@@ -96,13 +96,22 @@ blockquote{
     border-left-style: solid;
     border-left-width: 3px;
     border-left-color: #c3c4c5;
+    margin: 5%;
 }
 
-hr{
-    text-align: center;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 100%;
+hr {
+    margin: 50px 0 !important;
 }
+
+a.back{
+    margin-left: 19%;
+    color: #FBD194;
+    font-size: 0.6em;
+    text-decoration: underline;
+
+}
+
+a.back:hover{
+    background-color: #F0F8FF;
+}
+
