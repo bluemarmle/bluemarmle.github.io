@@ -1,8 +1,10 @@
 ---
 title: 《Collar×Malice》完食感想 アドニス&其他
+surtitle: Collar×Malice アドニス&其他
 layout: post
 permalink: /:year-:month-:day-:title/
 icon: collarmalice_adonis
+initial: cmadonis
 ---
 
 ## Chapter. 0

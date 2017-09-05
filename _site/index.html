@@ -24,11 +24,11 @@
 
         }
 
-         .selfdes {line-height: 1.8em;}
+         .selfdes {line-height: 1.8em;font-size: 0.85em; border-style: solid;border-width: 1px;padding: 4%;border-color: #F7F7F7;}
 
-         .barlist:hover {color: #DB7093;font-size: 0.8em;background: #fffbf5;}
-         .barlist:link {color: #DB7093;font-size: 0.8em;}
-         .barlist:visited {color: #DB7093;font-size: 0.8em;}
+         .barlist:hover {color: #DB7093;font-size: 0.8em;background: #fffbf5;text-decoration: none;}
+         .barlist:link {color: #DB7093;font-size: 0.8em;text-decoration: none;}
+         .barlist:visited {color: #DB7093;font-size: 0.8em;text-decoration: none;}
 
             /* 导航栏样式设定 */
             .daohanglan{list-style-type: none; margin: 0; padding: 0;}
@@ -54,8 +54,8 @@
             first       : "H",
             last        : "T",
             delay       : 100,
-            previous    : "⟵",
-            next        : "⟶"
+            previous    : "f",
+            next        : "n"
             });  
         });
     </script>
@@ -70,28 +70,26 @@
 
 <body>
 
-    <!-- 头牌 字体居中 blog简述 -->
+    <!-- front image -->
     <center><div>
-        <img id="head" src="http://localhost:4000/assets/img/head.png" height="50%" width="50%" >
+        <img id="head" src="http://localhost:4000/assets/img/head.png" width="50%" height="50%" style="margin-bottom: -8%">
         </div></center>
     
     <center><div id="toupai">
         <h1>BlueMarmle</h1>     <!-- name of your site, can be replaced in file _config.yml -->
-        <img src="http://localhost:4000/assets/img/fenge3.png">
         <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
         乙女、RPGゲーム感想、慢速攻略、生活碎碎念汇聚窝<br>
-        <strong>※blog上所有图文内容未经允许不可转载</strong>
         </p>
  
         </div></center>
-    <center><img id="fenge" src="http://localhost:4000/assets/img/fenge1.png" width="70%"></center>
+    <center><img id="fenge" src="http://localhost:4000/assets/img/fenge1.png" width="80%"></center>
 
 
 
         <!-- index,list链接 -->
 
         <center><div class="daohang">
-            <img style="margin-bottom: -27%;" src="http://localhost:4000/assets/img/indexback.png" width="80%">
+            <img style="margin-bottom: -28%; z-index: -1;" src="http://localhost:4000/assets/img/indexback.png" width="85%">
             <ul class="daohanglan">
                 <li class="daohanglist"><a class="dhl" href="http://localhost:4000/index.html">HOME</a></li>
                 <li class="daohanglist"><a class="dhl" href="http://localhost:4000/list.html">LIST</a></a></li>
@@ -105,7 +103,7 @@
         <div id="self">
 
             <center><img src="http://localhost:4000/assets/img/touxiang.png" width="85%"></center><br>
-            <strong style="font-size: 1.6em">BlueMarmle</strong>
+            <center><strong style="font-size: 1.6em">BlueMarmle</strong></center>
             <p class="selfdes" >
                 *变化系*掌机游戏PLAYER 除本命作忠诚度无限接近零<br>
                 稍微<s>（十分）</s>气象多端☆、绝对不要相信我说的话噢www<br>
@@ -158,41 +156,71 @@
             </p>
         </div>
             <!-- 个人侧边栏结束 -->
+        <div class="indexicon">
+        <center><img id="indexicon" src="http://localhost:4000/assets/img/indexicon.png"><br></center>
+        </div>
+        <!-- 右边侧边栏 -->
+        <div id="cebian">
+            <center><img style="margin-bottom: 10%;" src="http://localhost:4000/assets/img/fenge7.png" width="100%"></center>
+            <!-- 列表 -->
+            
+            <ul class="ccc" style="list-style: none;">
+                
+                <li><a class="cebianlan" href="/2017-08-24-collarmalice-adonis/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">《Collar×Malice》完食感想 アドニス&其他</a></li>
+                
+                <li><a class="cebianlan" href="/2017-08-20-mineo/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">《Collar×Malice》完食感想 峰雄</a></li>
+                
+                <li><a class="cebianlan" href="/2017-08-23-kei/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">《Collar×Malice》 完食感想 岡崎契</a></li>
+                
+                <li><a class="cebianlan" href="/2017-08-20-shirai/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">《Collar×Malice》 完食感想 白石景之</a></li>
+                
+                <li><a class="cebianlan" href="/2017-08-20-takeru/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">《Collar×Malice》 完食感想 尊</a></li>
+                
+                <li><a class="cebianlan" href="/2017-09-02-aiji/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">《Collar×Malice》 完食感想 柳愛時</a></li>
+                
+                <li><a class="cebianlan" href="/2017-08-26-odinsphire/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">オーディンスフィア　レイヴスラシル　完食感想</a></li>
+                
+                <li><a class="cebianlan" href="/2017-08-25-psychopass/"><img src="http://localhost:4000/assets/img/xiaohua.png" width="5%">PSYCHO-PASS サイコパス 選択なき幸福 完食感想</a></li>
+                
+            </ul>
+        </div>
+        <!-- 侧边栏结束 -->
 
              <!-- 目录 -->
         <div id="menu">
             <a name="indexmiao"></a>
-            <img src="http://localhost:4000/assets/img/indexicon.png" width="92%"><br>
             <center><div class="holder"></div></center>
                 <ul id="itemContainer" style="list-style: none;"> 
                 
-                <li><a class="mulu" href="/2017-09-02-aiji/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_aiji.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-09-02-aiji/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_aiji.png" width="100%"></a>
                 <p class="icondate">02 Sep 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-26-odinsphire/"><img class="muluicon" src="http://localhost:4000/assets/img/odin.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-26-odinsphire/"><img class="muluicon" src="http://localhost:4000/assets/img/odin.png" width="100%"></a>
                 <p class="icondate">26 Aug 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-25-psychopass/"><img class="muluicon" src="http://localhost:4000/assets/img/psychopass.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-25-psychopass/"><img class="muluicon" src="http://localhost:4000/assets/img/psychopass.png" width="100%"></a>
                 <p class="icondate">25 Aug 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-24-collarmalice-adonis/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_adonis.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-24-collarmalice-adonis/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_adonis.png" width="100%"></a>
                 <p class="icondate">24 Aug 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-23-kei/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_kei.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-23-kei/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_kei.png" width="100%"></a>
                 <p class="icondate">23 Aug 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-20-takeru/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_takeru.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-20-takeru/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_takeru.png" width="100%"></a>
                 <p class="icondate">20 Aug 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-20-shirai/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_kageyuki.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-20-shirai/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_kageyuki.png" width="100%"></a>
                 <p class="icondate">20 Aug 2017</p></li>
                 
-                <li><a class="mulu" href="/2017-08-20-mineo/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_mineo.png" width="95%"></a>
+                <li><a class="mulu" href="/2017-08-20-mineo/"><img class="muluicon" src="http://localhost:4000/assets/img/collarmalice_mineo.png" width="100%"></a>
                 <p class="icondate">20 Aug 2017</p></li>
                 
                 </ul>
             <center><div class="holder"></div></center>
         </div>
+            <!-- 目录结束 -->
+
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">

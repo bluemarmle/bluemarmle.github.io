@@ -24,11 +24,11 @@
 
         }
 
-         .selfdes {line-height: 1.8em;}
+         .selfdes {line-height: 1.8em;font-size: 0.85em; border-style: solid;border-width: 1px;padding: 4%;border-color: #F7F7F7;}
 
-         .barlist:hover {color: #DB7093;font-size: 0.8em;background: #fffbf5;}
-         .barlist:link {color: #DB7093;font-size: 0.8em;}
-         .barlist:visited {color: #DB7093;font-size: 0.8em;}
+         .barlist:hover {color: #DB7093;font-size: 0.8em;background: #fffbf5;text-decoration: none;}
+         .barlist:link {color: #DB7093;font-size: 0.8em;text-decoration: none;}
+         .barlist:visited {color: #DB7093;font-size: 0.8em;text-decoration: none;}
 
             /* 导航栏样式设定 */
             .daohanglan{list-style-type: none; margin: 0; padding: 0;}
@@ -54,8 +54,8 @@
             first       : "H",
             last        : "T",
             delay       : 100,
-            previous    : "⟵",
-            next        : "⟶"
+            previous    : "f",
+            next        : "n"
             });  
         });
     </script>
@@ -70,28 +70,26 @@
 
 <body>
 
-    <!-- 头牌 字体居中 blog简述 -->
+    <!-- front image -->
     <center><div>
-        <img id="head" src="{{ site.url }}/assets/img/head.png" height="50%" width="50%" >
+        <img id="head" src="{{ site.url }}/assets/img/head.png" width="50%" height="50%" style="margin-bottom: -8%">
         </div></center>
     
     <center><div id="toupai">
         <h1>{{ site.title }}</h1>     <!-- name of your site, can be replaced in file _config.yml -->
-        <img src="{{ site.url }}/assets/img/fenge3.png">
         <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
         乙女、RPGゲーム感想、慢速攻略、生活碎碎念汇聚窝<br>
-        <strong>※blog上所有图文内容未经允许不可转载</strong>
         </p>
  
         </div></center>
-    <center><img id="fenge" src="{{ site.url }}/assets/img/fenge1.png" width="70%"></center>
+    <center><img id="fenge" src="{{ site.url }}/assets/img/fenge1.png" width="80%"></center>
 
 
 
         <!-- index,list链接 -->
 
         <center><div class="daohang">
-            <img style="margin-bottom: -27%;" src="{{ site.url }}/assets/img/indexback.png" width="80%">
+            <img style="margin-bottom: -28%; z-index: -1;" src="{{ site.url }}/assets/img/indexback.png" width="85%">
             <ul class="daohanglan">
                 <li class="daohanglist"><a class="dhl" href="{{ site.url }}/index.html">HOME</a></li>
                 <li class="daohanglist"><a class="dhl" href="{{ site.url }}/list.html">LIST</a></a></li>
@@ -105,7 +103,7 @@
         <div id="self">
 
             <center><img src="{{ site.url }}/assets/img/touxiang.png" width="85%"></center><br>
-            <strong style="font-size: 1.6em">BlueMarmle</strong>
+            <center><strong style="font-size: 1.6em">BlueMarmle</strong></center>
             <p class="selfdes" >
                 *变化系*掌机游戏PLAYER 除本命作忠诚度无限接近零<br>
                 稍微<s>（十分）</s>气象多端☆、绝对不要相信我说的话噢www<br>
@@ -158,20 +156,36 @@
             </p>
         </div>
             <!-- 个人侧边栏结束 -->
+        <div class="indexicon">
+        <center><img id="indexicon" src="{{ site.url }}/assets/img/indexicon.png"><br></center>
+        </div>
+        <!-- 右边侧边栏 -->
+        <div id="cebian">
+            <center><img style="margin-bottom: 10%;" src="{{ site.url }}/assets/img/fenge7.png" width="100%"></center>
+            <!-- 列表 -->
+            {% assign pages = site.posts | sort_natural: "initial" %}
+            <ul class="ccc" style="list-style: none;">
+                {% for post in pages %}
+                <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/xiaohua.png" width="5%">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- 侧边栏结束 -->
 
              <!-- 目录 -->
         <div id="menu">
             <a name="indexmiao"></a>
-            <img src="{{ site.url }}/assets/img/indexicon.png" width="92%"><br>
             <center><div class="holder"></div></center>
                 <ul id="itemContainer" style="list-style: none;"> 
                 {% for post in site.posts %}
-                <li><a class="mulu" href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/{{ post.icon }}.png" width="95%"></a>
+                <li><a class="mulu" href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/{{ post.icon }}.png" width="100%"></a>
                 <p class="icondate">{{ post.date | date_to_string }}</p></li>
                 {% endfor %}
                 </ul>
             <center><div class="holder"></div></center>
         </div>
+            <!-- 目录结束 -->
+
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">

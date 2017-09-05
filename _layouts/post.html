@@ -35,6 +35,19 @@
                 </div></center>
                 <!-- 导航栏结束 -->
 
+                <!-- 右边侧边栏 -->
+                <div id="cebian">
+                <center><img src="{{ site.url }}/assets/img/touxiang1.png" width="100%"></center>
+                <!-- 列表 -->
+                {% assign pages = site.posts | sort_natural: "initial" %}
+                <ul class="ccc" style="list-style: none;">
+                    {% for post in pages %}
+                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/xiaohua.png" width="5%">{{ post.surtitle }}</a></li>
+                    {% endfor %}
+                </ul>
+                </div>
+                <!-- 侧边栏结束 -->
+
                 <!-- contents模板-->
                 <div class="content">
                     <center>
