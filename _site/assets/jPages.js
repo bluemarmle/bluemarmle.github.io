@@ -7,7 +7,6 @@
  * Copyright 2012 Luís Almeida
  * https://github.com/luis-almeida
  */
-
 ;(function($, window, document, undefined) {
 
   var name = "jPages",
