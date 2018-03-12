@@ -10,7 +10,6 @@ url: http://www.bluemarmle.com # the base hostname & protocol for your site, e.g
 markdown: kramdown
 theme: minima
 
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
