@@ -46,7 +46,7 @@
         $(document).ready(function(){
             $("div.holder").jPages({  
             containerID : "itemContainer",  
-            perPage     : 6,
+            perPage     : 8,
             startPage   : 1,
             startRang   : 1,
             midRange    : 5,
@@ -102,17 +102,17 @@
         <!-- 个人侧边介绍 -->
         <div id="self">
 
-            <center><img src="{{ site.url }}/assets/img/touxiang.png" width="85%"></center><br>
+            <center><img src="http://wx3.sinaimg.cn/mw690/0066JLozgy1fpb6kdu2kbj30q80q8h4u.jpg" width="90%"></center><br>
             <center><strong style="font-size: 1.6em">BlueMarmle</strong></center>
             <div class="selfdes">
                 <h6 class="date3">3月13日</h6><br />
-                    《SideKicks!》リコ线，ヒバリ线clear
-                    《SideKicks!》感想进行now
+                    《SideKicks!》リコ线，ヒバリ线clear<br />
+                    《SideKicks!》感想进行now<br />
                 <h6 class="date3">3月12日</h6><br />
-                    《金弦4》ハル绿线，如月律红线clear
-                    《7'scarlet》トア线clear
+                    《金弦4》ハル绿线，如月律红线clear<br />
+                    《7'scarlet》トア线clear<br />
                 <h6 class="date3">3月10日</h6><br />
-                    《7'scarlet》迦具土ヒナ线clear
+                    《7'scarlet》迦具土ヒナ线clear<br />
                 
             </div>
 
@@ -153,7 +153,7 @@
                 <img src="{{ site.url }}/assets/img/fenge2.png" width="100%">
             </div>
         </div>
-            <!-- 个人侧边栏结束 -->
+        <!-- 个人侧边栏结束 -->
         <div class="indexicon">
         <center><img id="indexicon" src="{{ site.url }}/assets/img/indexicon.png"><br></center>
         </div>
@@ -175,8 +175,15 @@
             <center><div class="holder"></div></center>
                 <ul id="itemContainer" style="list-style: none;"> 
                 {% for post in site.posts %}
-                <li><a class="mulu" href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/{{ post.icon }}.png" width="100%"></a>
-                <p class="icondate">{{ post.date | date_to_string }}</p></li>
+                <li>
+                <div class="mmulu">
+                    <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/{{ post.icon }}.png"></a>
+                    <a class="mulu" href="{{ post.url }}">{{ post.title }}</a>
+                    <p class="icondate">{{ post.date | date_to_string }}</p>
+                    <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest }}</p></a>
+                    <img src="{{ site.url }}/assets/img/fenge8.gif" width="95%">
+                </div>
+                </li>
                 {% endfor %}
                 </ul>
             <center><div class="holder"></div></center>
