@@ -38,8 +38,8 @@ footer{
 
 div.content{
     margin-top: 8%;
-    margin-left: 6%;
-    margin-right: 23%;
+    margin-left: 5%;
+    margin-right: 35%;
     margin-bottom: 2%;
     line-height: 1.7em;
     border-right-style: solid;
@@ -64,7 +64,7 @@ div.neirong{
 }
 
 p{
-    font-size: 0.9em;
+    font-size: 1em;
     text-indent: 2em;
 }
 
@@ -143,10 +143,10 @@ a.cebianlan{
 
 #cebian{
     float: right;
-    width: 17%;
+    width: 25%;
     text-align: left;
     z-index: 10;
-    margin-right: 3%;
+    margin-right: 5%;
     padding: 1%;
 }
 
