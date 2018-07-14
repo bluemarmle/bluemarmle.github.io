@@ -5,8 +5,8 @@
 <html>
 <head>
     <title>{{ site.title }}</title>  <!-- 网页标签，搜索引擎使用 -->
-
-    <script src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <meta name="google-site-verification" content="-PQ4-2IvG5D8hVcVF2jBY5hS3n9PetMDrEqX9VL7Lic" /> <!-- Search Google -->
+    <script src="https://code.jquery.com/jquery-1.8.1.min.js"></script> <!-- jquery -->
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">   
     <meta name="author" conten="BlueMarmle">
     <meta http-equiv="Content-Type" content="text/html">
@@ -169,13 +169,17 @@
         <div class="indexicon">
         <center><img id="indexicon" src="{{ site.url }}/assets/img/indexicon.png"><br></center>
         </div>
+
         <!-- 右边侧边栏 -->
         <div id="cebian">
             <!-- 列表 -->
             {% assign pages = site.posts | sort_natural: "initial" %}
+
             <ul class="ccc" style="list-style: none;">
                 {% for post in pages %}
+                {% if post.tag == "ka" %}
                 <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/xiaohua.png" width="5%">{{ post.surtitle }}</a></li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
@@ -198,10 +202,11 @@
                 </li>
                 {% endfor %}
                 </ul>
+
+                
             <center><div class="holder"></div></center>
         </div>
             <!-- 目录结束 -->
-
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">

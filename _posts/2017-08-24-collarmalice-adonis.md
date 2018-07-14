@@ -5,7 +5,8 @@ layout: post
 permalink: /:year-:month-:day-:title/
 icon: collarmalice_adonis
 initial: cmadonis
-digest: ​大头头是个交警&nbsp#小头头眼里只有大头头&nbsp#干部们的穿衣品味生怕别人不知道是谐教&nbsp#执行者的穿衣品味生怕别人不知道是凶手&nbsp#全国电视台直播窝里斗&nbsp#Criminal大合照CG好感度瞬间拉满&nbsp……
+digest: 大头头是个交警&nbsp#小头头眼里只有大头头&nbsp#干部们的穿衣品味生怕别人不知道是谐教&nbsp#执行者的穿衣品味生怕别人不知道是凶手&nbsp#全国电视台直播窝里斗&nbsp#Criminal大合照CG好感度瞬间拉满&nbsp……
+tag: ka
 ---
 
 ## Chapter. 0
