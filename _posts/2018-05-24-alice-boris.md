@@ -3,7 +3,7 @@ title: 《ハートの国のアリス》滞在线感想 Boris
 surtitle: ハートの国のアリス Boris
 icon: heart_alice_boris
 layout: post
-digest: 只存在认知中的外来者是“特别的”，靠着怀表才能使自身时间走动的自己是正常的，把自己和心国住民的生命当做物体处理即普通。就算自己死了怀表还能继承给下一个人，这个世界的任何角色都能找到替代品，这样理所当然的活着。
+digest: 一周目Boris线感想，从爱丽丝这个无敌巨坑向上爬了1厘米=-=，决定下周目开始看攻略了。
 permalink: /:year-:month-:day-:title/
 initial: heartaliceboris
 tag: ha

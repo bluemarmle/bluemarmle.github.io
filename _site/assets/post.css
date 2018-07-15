@@ -94,6 +94,27 @@ h3{
     text-indent: 3%;
 }
 
+/* 表格样式设定 */
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+td{
+    text-align: left;
+}
+
+th{
+    background-image: url(img/tableback.png);
+    background-repeat: repeat;
+    font-weight: bold;
+}
+
+
 /* 引用模块设定 */
 blockquote{
     color: #999999;
@@ -151,11 +172,30 @@ a.cebianlan{
 }
 
 ul.ccc{
-    border-top-style: dotted;
-    border-top-width: 5px;
-    border-top-color: #E6E6FA;
     margin: 0;
     padding: 0;
-    margin-top: 10%;
+    margin-top: 2%;
+}
+
+li.gyo{
+    font-size: 0.9em;
+    color: #E6E6FA;
+    
+}
+
+h6.category{
+    font-size: 2em;
+    border-bottom-style: dotted;
+    border-width:1px;
+    color: #666666;
+    height: 1.5em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+ul.gmlist{
+    list-style-type: none;
+    padding: 0; 
+
 }
 /* 侧边栏设置结束 */

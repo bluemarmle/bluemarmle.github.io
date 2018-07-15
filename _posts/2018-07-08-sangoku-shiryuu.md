@@ -3,7 +3,7 @@ title: 《三国恋戦記～オトメの兵法～》子龍线感想
 surtitle: 三国恋戦記～オトメの兵法～ 子龍
 icon: sangoku_otome_shiryuu
 layout: post
-digest: 即使没有孟德线剧本浓烈的冲击，子龙线走完感觉很纯净温暖。如果说孟德线时是抱头痛哭，这条线是在完结后忽然感动得掉眼泪。两方都是作为一个Player从完整的游戏感受到、不可或缺的情感。
+digest: (つД｀)･ﾟ･最后泪崩的线，一点不虐！真的一点都不虐！！
 permalink: /:year-:month-:day-:title/
 initial: sangokurensenkiotomeshiryu
 tag: sa
