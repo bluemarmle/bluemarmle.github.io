@@ -151,15 +151,15 @@
             <a name="indexmiao"></a>
             <center><div class="holder"></div></center>
                 <ul id="itemContainer" style="list-style: none;"> 
-                <img src="{{ site.url }}/assets/img/fenge10.png" width="95%">
+                <img src="{{ site.url }}/assets/img/fenge10.png" width="100%">
                 {% for post in site.posts %}
                 <li>
                 <div class="mmulu">
                     <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
-                    <a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/hoshi.png" width="3%">{{ post.title }}</a>
+                    <center><a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/hoshi.png" width="3%">{{ post.title }}</a></center>
                     <p class="icondate">{{ post.date | date_to_string }}</p>
                     <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest }}</p></a>
-                    <img src="{{ site.url }}/assets/img/fenge10.png" width="95%">
+                    <img src="{{ site.url }}/assets/img/fenge10.png" width="100%">
                 </div>
                 </li>
                 {% endfor %}
