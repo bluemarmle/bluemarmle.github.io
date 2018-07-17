@@ -1,6 +1,6 @@
 body{
     background-color: white;
-    background-image: url(img/back2.png);
+    background-image: url(img/back3.png);
     background-repeat:repeat;
     background-position: top;
     background-position: center;
@@ -11,7 +11,7 @@ body{
 h1{
     font-size: 7em;
     font-family: Georgia;
-    color: #FFDB8D;
+    color: #FFDAB9;
     z-index: 2;
     font-variant: small-caps;
     margin-bottom: 0%;
@@ -19,7 +19,7 @@ h1{
 
 p.jianshu{
     font-size: 0.8em;
-    color: #FFEFD5;
+    color: #BC8F8F;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 3%;
@@ -187,7 +187,7 @@ a:active{
 }
 
 .holder a.jp-disabled,a.disabled:hover{
-    color: white;
+    color: #fafafa;
 }
 
 /* 侧边栏样式设置 */
@@ -248,9 +248,9 @@ p.category{
 }
 
 div.mmulu{
-    margin-bottom: 6%;
+    margin-bottom: 7%;
     background-color: white;
-    box-shadow: 5px 5px 20px #FAF0E6;
+    box-shadow: 1px 1px 2px #FAF0E6;
     height: 30%;
     overflow: hidden;
     border-style: solid;
