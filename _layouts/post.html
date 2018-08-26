@@ -74,6 +74,14 @@
                         {% endfor %}
                 </ul>
                 <ul class="ccc" style="list-style: none;">
+                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
+                    {% for post in pages %}
+                    {% if post.tag == "ra" %}
+                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="ccc" style="list-style: none;">
                         <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
                         {% for post in pages %}
                         {% if post.tag == "huizong" %}
