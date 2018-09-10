@@ -9,7 +9,6 @@ body{
 }
 
 a.shoucang{
-    font-size: 0.5em;
     color: #BC8F8F;
     text-decoration: none;
 }
@@ -20,11 +19,6 @@ a:hover.shoucang{
 
 a:visited.shoucang{
     color: #BC8F8F;
-}
-
-div.tou{
-    margin-left: 5%;
-    float: center;
 }
 
 @media screen and (min-width: 1024px){ /*页面大小*/
