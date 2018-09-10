@@ -5,29 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 响应式网页 --> 
         <title>BlueMarmle ABOUT 关于blog</title>
         <!-- 网站说明 无需更改 -->
         <link rel="stylesheet" href="/assets/others.css">    <!-- 与CSS文件链接 -->
 
         <style>
-            /* 导航栏样式设定 */
-            .daohanglan{list-style-type: none; margin: 0; padding: 0;}
-            .daohanglist{display: inline;} /* 水平+块设定 */
-            .dhl:hover{text-decoration-line: none; color: #DB7093; background-color: FLORALWHITE; border-style: solid; border-width: 1px; }
-            .dhl:visited{text-decoration-line: none; color: #DB7093; border-style: solid; border-width: 1px; }
-            .dhl:link{text-decoration-line: none;color: #DB7093; border-style: solid; border-width: 1px;}
-            /* 导航栏设计结束 */
-
-            /* 说明样式设定 */
-            .wb{
-                margin-left: 15%;
-                margin-right: 15%;
-                line-height: 1.8em;
-                color: #696969;
-                font-size: 1.3em;
-                margin-top: 5%;
-            }
-            /* 说明样式设定结束*/
 
             /* 锚设定 */
             #ulmiao{list-style-type: none;padding: 0;}
@@ -37,23 +20,11 @@
             .miao:visited{text-decoration: none; color: #008080;}
             /* 锚设定结束 */
 
-            h3{
-                margin-top: 10%;
-                padding-top: 2%;
-                padding-bottom: 2%;
-                padding-left: 2%;
-                padding-right: 2%;
-                background-color: #FFFAFA;
-                border-style: solid;
-                border-width: 1px;
-                color: #BC8F8F;
-                margin-left: 10%;
-                margin-right: 10%;
-            }
         </style>
     </head>
 
     <body>
+    <div class="all">
         <!-- 此处用为post模板 -->
         <div><center><img id="pagehead" src="/assets/img/pagehead.png" width="100%"></center></div>
         <!-- 顶上图片确定 -->
@@ -69,10 +40,10 @@
         <!-- 导航栏结束 -->
 
         <!-- about说明 -->
-        <div style="margin-top: 4%; margin-bottom: 5%; color: #2F4F4F; line-height: 1.5em;">
+        <div class="mmm">
             <p>
                 <center><h2>页面包含内容：</h2></center>
-                <ul id="ulmiao" style="margin-left: 39%">
+                <ul id="ulmiao">
                     <li><a class="miao" href="#website"><img src="/assets/img/aboutkicon.png" width="2%">关于blog——About this blog</a></li>
                     <li><a class="miao" href="#myself"><img src="/assets/img/aboutkicon.png" width="2%">关于自己——About myself</a></li>
                     <li><a class="miao" href="#inhalt"><img src="/assets/img/aboutkicon.png" width="2%">关于内容——About the content of this blog</a></li>
@@ -130,7 +101,7 @@
             </p>
         </div>
         <!-- about内容结束 -->
-
+    </div>
 
 
 
@@ -140,7 +111,7 @@
     </body>
 
     <footer>
-            <center>Copyright© 2017 BlueMarmle</center>
+            <center>© 2017-2018 BlueMarmle</center>
     </footer>
 
 

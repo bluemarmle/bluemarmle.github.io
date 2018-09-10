@@ -39,7 +39,6 @@
 
             /* 导航栏样式设定 */
             .daohanglan{list-style-type: none; margin: 0; padding: 0;}
-            .daohanglist{display: inline;} /* 水平+块设定 */
             /* 导航栏设计结束 */
     </style>
 
@@ -96,7 +95,7 @@
 
 
 <body>
-
+    <div class="all">
     <!-- front image -->
     <center>
         <img id="head" src="{{ site.url }}/assets/img/head1.png" width="50%" height="50%" style="margin-bottom: -3%">
@@ -132,7 +131,6 @@
             <center><p class="category">CATEGORY</p></center>
           <!-- 列表 -->
             {% assign pages = site.posts | sort_natural: "initial" %}
-
             <ul class="ccc" style="list-style: none;">
                 <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
                 {% for post in pages %}
@@ -187,7 +185,6 @@
                     <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/hoshi.png" width="3%">{{ post.title }}</a></center>
-
                         <p class="icondate">{{ post.date | date_to_string }}</p>
                         <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest }}</p></a>
                     </div>
@@ -201,6 +198,54 @@
         </div>
         <!-- 目录结束 -->
 
+        <!-- 右边侧边栏 -->
+        <div id="cebian1">
+                <center><p class="category">CATEGORY</p></center>
+              <!-- 列表 -->
+                {% assign pages = site.posts | sort_natural: "initial" %}
+                <ul class="ccc" style="list-style: none;">
+                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
+                    {% for post in pages %}
+                    {% if post.tag == "ka" %}
+                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="ccc" style="list-style: none;">
+                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
+                        {% for post in pages %}
+                        {% if post.tag == "sa" %}
+                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                </ul>
+                <ul class="ccc" style="list-style: none;">
+                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
+                        {% for post in pages %}
+                        {% if post.tag == "ha" %}
+                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                </ul>
+                <ul class="ccc" style="list-style: none;">
+                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
+                    {% for post in pages %}
+                    {% if post.tag == "ra" %}
+                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="ccc" style="list-style: none;">
+                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
+                        {% for post in pages %}
+                        {% if post.tag == "huizong" %}
+                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                </ul>
+            </div>
+            <!-- 侧边栏结束 -->
+</div>
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=11438127; 

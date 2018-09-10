@@ -14,19 +14,11 @@
         <link rel="icon" href="{{ site.url }}/assets/img/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="{{ site.url }}/assets/img/favicon.ico" type="image/x-icon">
         
-        <style>
-            /* 导航栏样式设定 */
-            .daohanglan{list-style-type: none; margin: 0; padding: 0;}
-            .daohanglist{display: inline;} /* 水平+块设定 */
-            .dhl:hover{text-decoration-line: none; color: #DB7093; background-color: FLORALWHITE; border-style: solid; border-width: 1px; }
-            .dhl:visited{text-decoration-line: none; color: #DB7093; border-style: solid; border-width: 1px; }
-            .dhl:link{text-decoration-line: none;color: #DB7093; border-style: solid; border-width: 1px;}
-            /* 导航栏设计结束 */
-        </style>
 
     </head>
 
     <body>
+    <div class="all">
                 <!-- 此处用为post模板 -->
                 <div><center><img id="pagehead" src="{{ site.url }}/assets/img/pagehead.png" width="100%"></center></div>
                 <!-- 顶上图片确定 -->
@@ -50,47 +42,47 @@
               <!-- 列表 -->
                 {% assign pages = site.posts | sort_natural: "initial" %}
                 <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
+                    <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">か行</li>
                     {% for post in pages %}
                     {% if post.tag == "ka" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                    <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
                     {% endif %}
                     {% endfor %}
                 </ul>
                 <ul class="ccc" style="list-style: none;">
-                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
+                        <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">さ行</li>
                         {% for post in pages %}
                         {% if post.tag == "sa" %}
-                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                        <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
                         {% endif %}
                         {% endfor %}
                 </ul>
                 <ul class="ccc" style="list-style: none;">
-                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
+                        <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">は行</li>
                         {% for post in pages %}
                         {% if post.tag == "ha" %}
-                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                        <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
                         {% endif %}
                         {% endfor %}
                 </ul>
                 <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
+                    <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">ら行</li>
                     {% for post in pages %}
                     {% if post.tag == "ra" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                    <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
                     {% endif %}
                     {% endfor %}
                 </ul>
                 <ul class="ccc" style="list-style: none;">
-                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
+                        <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">其他</li>
                         {% for post in pages %}
                         {% if post.tag == "huizong" %}
-                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+                        <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
                         {% endif %}
                         {% endfor %}
                 </ul>
 
-            </div>
+        </div>
             <!-- 侧边栏结束 -->
 
                 <!-- contents模板-->
@@ -110,6 +102,54 @@
                 <div>
                     <a class="back" href="{{ site.url }}/index.html#indexmiao">·BACK</a>
                 </div>
+
+                <div id="cebian1">
+                         <center><h6 class="category">CATEGORY</p></center>
+                      <!-- 列表 -->
+                        {% assign pages = site.posts | sort_natural: "initial" %}
+                        <ul class="ccc" style="list-style: none;">
+                            <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">か行</li>
+                            {% for post in pages %}
+                            {% if post.tag == "ka" %}
+                            <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <ul class="ccc" style="list-style: none;">
+                                <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">さ行</li>
+                                {% for post in pages %}
+                                {% if post.tag == "sa" %}
+                                <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
+                                {% endif %}
+                                {% endfor %}
+                        </ul>
+                        <ul class="ccc" style="list-style: none;">
+                                <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">は行</li>
+                                {% for post in pages %}
+                                {% if post.tag == "ha" %}
+                                <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
+                                {% endif %}
+                                {% endfor %}
+                        </ul>
+                        <ul class="ccc" style="list-style: none;">
+                            <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">ら行</li>
+                            {% for post in pages %}
+                            {% if post.tag == "ra" %}
+                            <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <ul class="ccc" style="list-style: none;">
+                                <li class="gyo"><img class="gyotu" src="{{ site.url }}/assets/img/ribbon3.png">其他</li>
+                                {% for post in pages %}
+                                {% if post.tag == "huizong" %}
+                                <li><a class="cebianlan" href="{{ post.url }}"><img class="cbtu" src="{{ site.url }}/assets/img/dot.png">{{ post.surtitle }}</a></li>
+                                {% endif %}
+                                {% endfor %}
+                        </ul>
+        
+                </div>
+    </div>
     </body>
 
 
