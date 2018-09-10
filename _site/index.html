@@ -12,7 +12,8 @@
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="generator" content="Visual Studio Code">
     <meta name="revised" content="bm,17/8/2017">
-    <meta name="description" content="">      
+    <meta name="description" content=""> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 响应式网页 -->   
     <!-- all beginned with "meta" describes the site -->
      <link rel="stylesheet" href="http://localhost:4000/assets/home.css">      <!-- 与css文件链接 -->
      <!-- 定义超链接样式 -->
@@ -39,9 +40,6 @@
             /* 导航栏样式设定 */
             .daohanglan{list-style-type: none; margin: 0; padding: 0;}
             .daohanglist{display: inline;} /* 水平+块设定 */
-            .dhl:hover{text-decoration-line: none; color: #DB7093; background-color: FLORALWHITE; border-style: solid; border-width: 1px; }
-            .dhl:visited{text-decoration-line: none; color: #DB7093; border-style: solid; border-width: 1px; }
-            .dhl:link{text-decoration-line: none;color: #DB7093; border-style: solid; border-width: 1px;}
             /* 导航栏设计结束 */
     </style>
 
@@ -56,13 +54,37 @@
             startRang   : 1,
             midRange    : 5,
             endRange    : 1,
-            first       : "H",
-            last        : "T",
             delay       : 100,
-            previous    : "F",
-            next        : "N"
+            previous    : "◁",
+            next        : "▷"
             });  
         });
+
+        function addBookmark(url, title){
+            if (!url) {url = window.location}
+            if (!title) {title = document.title}
+        var browser=navigator.userAgent.toLowerCase();
+            if (window.sidebar) { // Mozilla, Firefox, Netscape
+            window.sidebar.addPanel(title, url,"");
+            } else if( window.external) { // IE or chrome
+            if (browser.indexOf('chrome')==-1){ // ie
+            window.external.AddFavorite( url, title);
+            } else { // chrome
+            alert('(づ′▽`)づ 请按下 CTRL+D (mac：Command+D)收藏');
+            }
+            }
+            else if(window.opera && window.print) { // Opera - automatically adds to sidebar if rel=sidebar in the tag
+            return true;
+            }
+            else if (browser.indexOf('konqueror')!=-1) { // Konqueror
+            alert('(づ′▽`)づ 请按下 CTRL+B 收藏');
+            }
+            else if (browser.indexOf('webkit')!=-1){ // safari
+            alert('(づ′▽`)づ 请按下 CTRL+B (mac：Command+D)收藏');
+            } else {
+            alert('(づ′▽`)づ 泥萌使用的浏览器不支持js添加，请手动按星星/收藏键啦')
+            }
+        }
     </script>
 
 
@@ -76,25 +98,25 @@
 <body>
 
     <!-- front image -->
-    <center><div>
+    <center>
         <img id="head" src="http://localhost:4000/assets/img/head1.png" width="50%" height="50%" style="margin-bottom: -3%">
-        </div></center>
+    </center>
     
     <center><div id="toupai">
         <h1>BlueMarmle</h1>     <!-- name of your site, can be replaced in file _config.yml -->
         <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
         >乙女、RPGゲーム感想、慢速攻略、幻想的彼端<<br>
+        <a class="shoucang" href="#" onclick="addBookmark('https://www.bluemarmle.com','BlueMarmle')">❤收藏</a>
+        &nbsp;&nbsp;❤联络: blaumurmel@163.com
         </p>
- 
         </div></center>
-    <center><img id="fenge" src="http://localhost:4000/assets/img/fenge1.png" width="80%"></center>
 
 
 
         <!-- index,list链接 -->
 
         <center><div class="daohang">
-                <img style="margin-bottom: -15%; z-index: -100;" src="http://localhost:4000/assets/img/indexback1.png" width="85%">
+                <img id="indexback1" style="margin-bottom: -15%; z-index: -100;" src="http://localhost:4000/assets/img/indexback1.png" width="85%">
                 <ul class="daohanglan">
                     <li class="daohanglist"><a class="dhl" href="http://localhost:4000/index.html">HOME</a></li>
                     <li class="daohanglist"><a class="dhl" href="http://localhost:4000/list.html">LIST</a></a></li>
@@ -235,14 +257,13 @@
             <a name="indexmiao"></a>
             <center><div class="holder"></div></center>
                 <ul id="itemContainer" style="list-style: none;"> 
-                <img src="http://localhost:4000/assets/img/fenge9.png" width="100%">
                 
                 <li>
                 <div class="mmulu">
                     <a href="/2018-09-10-gakuen/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/iconriku.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2018-09-10-gakuen/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">絶対階級学園 - 角色别感想 ＊鹰岭陸＊</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">10 Sep 2018</p>
                         <a class="digesta" href="/2018-09-10-gakuen/"><p class="digest">※ 涉及剧透，未玩的请注意</p></a>
                     </div>
@@ -254,7 +275,7 @@
                     <a href="/2018-09-09-2018zj/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/2018hui.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2018-09-09-2018zj/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">2018进度&购入(※09/09更新)</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">09 Sep 2018</p>
                         <a class="digesta" href="/2018-09-09-2018zj/"><p class="digest">メモ</p></a>
                     </div>
@@ -266,7 +287,7 @@
                     <a href="/2018-08-26-re/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/rebirthday.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2018-08-26-re/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">《Re:BIRTHDAY SONG～恋を唄う死神～》完食感想</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">26 Aug 2018</p>
                         <a class="digesta" href="/2018-08-26-re/"><p class="digest">6/10</p></a>
                     </div>
@@ -278,7 +299,7 @@
                     <a href="/2018-07-21-sangoku-gendoku/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/sangoku_otome_genndoku.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2018-07-21-sangoku-gendoku/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">《三国恋戦記～オトメの兵法～》玄德线感想</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">21 Jul 2018</p>
                         <a class="digesta" href="/2018-07-21-sangoku-gendoku/"><p class="digest">甜中带酸酸中带甜的物语~</p></a>
                     </div>
@@ -290,7 +311,7 @@
                     <a href="/2018-07-08-sangoku-shiryuu/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/sangoku_otome_shiryuu.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2018-07-08-sangoku-shiryuu/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">《三国恋戦記～オトメの兵法～》子龍线感想</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">08 Jul 2018</p>
                         <a class="digesta" href="/2018-07-08-sangoku-shiryuu/"><p class="digest">(つД｀)･ﾟ･最后泪崩的线，一点不虐！真的一点都不虐！！</p></a>
                     </div>
@@ -302,7 +323,7 @@
                     <a href="/2018-05-24-alice-boris/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/heart_alice_boris.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2018-05-24-alice-boris/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">《ハートの国のアリス》滞在线感想 Boris</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">24 May 2018</p>
                         <a class="digesta" href="/2018-05-24-alice-boris/"><p class="digest">一周目Boris线感想，从爱丽丝这个无敌巨坑向上爬了1厘米=-=，决定下周目开始看攻略了。</p></a>
                     </div>
@@ -314,7 +335,7 @@
                     <a href="/2017-08-24-collarmalice-adonis/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/collarmalice_adonis.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2017-08-24-collarmalice-adonis/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">《Collar×Malice》完食感想 アドニス&其他</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">24 Aug 2017</p>
                         <a class="digesta" href="/2017-08-24-collarmalice-adonis/"><p class="digest">市香、adonis及x-days的大家感想集合☆</p></a>
                     </div>
@@ -326,7 +347,7 @@
                     <a href="/2017-08-23-kei/"><img class="muluicon" src="http://localhost:4000/assets/img/posticon/collarmalice_kei.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="/2017-08-23-kei/"><img src="http://localhost:4000/assets/img/hoshi.png" width="3%">《Collar×Malice》 完食感想 岡崎契</a></center>
-                    <center><img src="http://localhost:4000/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">23 Aug 2017</p>
                         <a class="digesta" href="/2017-08-23-kei/"><p class="digest">认真没什么笑点的感想…今天的我总是不知道昨天的我到底在想什么。</p></a>
                     </div>

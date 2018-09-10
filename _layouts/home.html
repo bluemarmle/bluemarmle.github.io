@@ -12,7 +12,8 @@
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="generator" content="Visual Studio Code">
     <meta name="revised" content="bm,17/8/2017">
-    <meta name="description" content="{{ site.description }}">      
+    <meta name="description" content="{{ site.description }}"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 响应式网页 -->   
     <!-- all beginned with "meta" describes the site -->
      <link rel="stylesheet" href="{{ site.url }}/assets/home.css">      <!-- 与css文件链接 -->
      <!-- 定义超链接样式 -->
@@ -39,9 +40,6 @@
             /* 导航栏样式设定 */
             .daohanglan{list-style-type: none; margin: 0; padding: 0;}
             .daohanglist{display: inline;} /* 水平+块设定 */
-            .dhl:hover{text-decoration-line: none; color: #DB7093; background-color: FLORALWHITE; border-style: solid; border-width: 1px; }
-            .dhl:visited{text-decoration-line: none; color: #DB7093; border-style: solid; border-width: 1px; }
-            .dhl:link{text-decoration-line: none;color: #DB7093; border-style: solid; border-width: 1px;}
             /* 导航栏设计结束 */
     </style>
 
@@ -56,13 +54,37 @@
             startRang   : 1,
             midRange    : 5,
             endRange    : 1,
-            first       : "H",
-            last        : "T",
             delay       : 100,
-            previous    : "F",
-            next        : "N"
+            previous    : "◁",
+            next        : "▷"
             });  
         });
+
+        function addBookmark(url, title){
+            if (!url) {url = window.location}
+            if (!title) {title = document.title}
+        var browser=navigator.userAgent.toLowerCase();
+            if (window.sidebar) { // Mozilla, Firefox, Netscape
+            window.sidebar.addPanel(title, url,"");
+            } else if( window.external) { // IE or chrome
+            if (browser.indexOf('chrome')==-1){ // ie
+            window.external.AddFavorite( url, title);
+            } else { // chrome
+            alert('(づ′▽`)づ 请按下 CTRL+D (mac：Command+D)收藏');
+            }
+            }
+            else if(window.opera && window.print) { // Opera - automatically adds to sidebar if rel=sidebar in the tag
+            return true;
+            }
+            else if (browser.indexOf('konqueror')!=-1) { // Konqueror
+            alert('(づ′▽`)づ 请按下 CTRL+B 收藏');
+            }
+            else if (browser.indexOf('webkit')!=-1){ // safari
+            alert('(づ′▽`)づ 请按下 CTRL+B (mac：Command+D)收藏');
+            } else {
+            alert('(づ′▽`)づ 泥萌使用的浏览器不支持js添加，请手动按星星/收藏键啦')
+            }
+        }
     </script>
 
 
@@ -76,25 +98,25 @@
 <body>
 
     <!-- front image -->
-    <center><div>
+    <center>
         <img id="head" src="{{ site.url }}/assets/img/head1.png" width="50%" height="50%" style="margin-bottom: -3%">
-        </div></center>
+    </center>
     
     <center><div id="toupai">
         <h1>{{ site.title }}</h1>     <!-- name of your site, can be replaced in file _config.yml -->
         <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
         >乙女、RPGゲーム感想、慢速攻略、幻想的彼端<<br>
+        <a class="shoucang" href="#" onclick="addBookmark('https://www.bluemarmle.com','BlueMarmle')">❤收藏</a>
+        &nbsp;&nbsp;❤联络: blaumurmel@163.com
         </p>
- 
         </div></center>
-    <center><img id="fenge" src="{{ site.url }}/assets/img/fenge1.png" width="80%"></center>
 
 
 
         <!-- index,list链接 -->
 
         <center><div class="daohang">
-                <img style="margin-bottom: -15%; z-index: -100;" src="{{ site.url }}/assets/img/indexback1.png" width="85%">
+                <img id="indexback1" style="margin-bottom: -15%; z-index: -100;" src="{{ site.url }}/assets/img/indexback1.png" width="85%">
                 <ul class="daohanglan">
                     <li class="daohanglist"><a class="dhl" href="{{ site.url }}/index.html">HOME</a></li>
                     <li class="daohanglist"><a class="dhl" href="{{ site.url }}/list.html">LIST</a></a></li>
@@ -159,14 +181,13 @@
             <a name="indexmiao"></a>
             <center><div class="holder"></div></center>
                 <ul id="itemContainer" style="list-style: none;"> 
-                <img src="{{ site.url }}/assets/img/fenge9.png" width="100%">
                 {% for post in site.posts %}
                 <li>
                 <div class="mmulu">
                     <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/hoshi.png" width="3%">{{ post.title }}</a></center>
-                    <center><img src="{{ site.url }}/assets/img/fenge10.png" width="50%"></center>
+
                         <p class="icondate">{{ post.date | date_to_string }}</p>
                         <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest }}</p></a>
                     </div>
