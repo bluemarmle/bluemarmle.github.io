@@ -222,6 +222,7 @@ div.mmm{
     body{
         background-image: url(img/tableback3.png);
         background-repeat:repeat;
+        background-attachment: fixed;
         background-position: top;
         background-position: center;
         background-size: 100%;

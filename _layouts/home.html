@@ -1,7 +1,4 @@
-
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>{{ site.title }}</title>  <!-- 网页标签，搜索引擎使用 -->
@@ -15,20 +12,17 @@
     <meta name="description" content="{{ site.description }}"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 响应式网页 -->   
     <!-- all beginned with "meta" describes the site -->
-     <link rel="stylesheet" href="{{ site.url }}/assets/home.css">      <!-- 与css文件链接 -->
-     <!-- 定义超链接样式 -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/home.css">      <!-- 与css文件链接 -->
 
-     <!-- 网页图标 -->
-     <link rel="icon" href="{{ site.url }}/assets/img/favicon.ico" type="image/x-icon">
-     <link rel="shortcut icon" href="{{ site.url }}/assets/img/favicon.ico" type="image/x-icon">
+    <!-- 网页图标 -->
+    <link rel="icon" href="{{ site.url }}/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ site.url }}/assets/img/favicon.ico" type="image/x-icon">
 
-     <style>
-
+    <style>
          h3 {font-weight: normal; font-size: 0.8em; color: #BC8F8F;background-color: #fef5e7; padding: 0.5em;
         border-style: solid;
         border-width: 1px;
         border-color: #BC8F8F;
-
         }
 
          .selfdes {line-height: 1.2em;font-size: 0.8em;}
@@ -37,14 +31,15 @@
          .barlist:link {color: #DB7093;font-size: 0.8em;text-decoration: none;}
          .barlist:visited {color: #DB7093;font-size: 0.8em;text-decoration: none;}
 
-            /* 导航栏样式设定 */
-            .daohanglan{list-style-type: none; margin: 0; padding: 0;}
-            /* 导航栏设计结束 */
+        /* 导航栏样式设定 */
+        .daohanglan{list-style-type: none; margin: 0; padding: 0;}
+        /* 导航栏设计结束 */
     </style>
 
     <!-- 引用jQuery script -->
     <script src="{{ site.url }}/assets/jPages.js"></script>
     <script>
+        //paginator
         $(document).ready(function(){
             $("div.holder").jPages({  
             containerID : "itemContainer",  
@@ -58,7 +53,8 @@
             next        : "▷"
             });  
         });
-
+        
+        //bookmark
         function addBookmark(url, title){
             if (!url) {url = window.location}
             if (!title) {title = document.title}
@@ -85,167 +81,160 @@
             }
         }
     </script>
-
-
-
-
 </head>
 
-
-
-
 <body>
-    <div class="all">
-    <!-- front image -->
-    <center>
-        <img id="head" src="{{ site.url }}/assets/img/head1.png" width="50%" height="50%" style="margin-bottom: -3%">
-    </center>
-    
-    <center><div id="toupai">
-        <h1>{{ site.title }}</h1>     <!-- name of your site, can be replaced in file _config.yml -->
-        <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
-        >乙女、RPGゲーム感想、慢速攻略、幻想的彼端<<br>
-        <a class="shoucang" href="#" onclick="addBookmark('https://www.bluemarmle.com','BlueMarmle')">·收藏</a>
-        &nbsp;&nbsp;·联络: blaumurmel@163.com
-        </p>
-        </div></center>
+<div class="all">
+<!-- front image -->
+<center>
+    <img id="head" src="{{ site.url }}/assets/img/head1.png" width="50%" height="50%" style="margin-bottom: -3%">
+</center>
 
+<!-- describtion of the site -->
+<center><div id="toupai">
+    <h1>{{ site.title }}</h1>     <!-- name of your site, can be replaced in file _config.yml -->
+    <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
+    >乙女、RPGゲーム感想、慢速攻略、幻想的彼端<<br>
+    <a class="shoucang" href="#" onclick="addBookmark('https://www.bluemarmle.com','BlueMarmle')">·收藏</a>
+    &nbsp;&nbsp;·联络: blaumurmel@163.com
+    </p>
+</div></center>
 
+<!-- 导航栏 -->
+<center><div class="daohang">
+    <img id="indexback1" style="margin-bottom: -15%; z-index: -100;" src="{{ site.url }}/assets/img/indexback1.png" width="85%">
+    <ul class="daohanglan">
+        <li class="daohanglist"><a class="dhl" href="{{ site.url }}/index.html">HOME</a></li>
+        <li class="daohanglist"><a class="dhl" href="{{ site.url }}/list.html">LIST</a></a></li>
+        <li class="daohanglist"><a class="dhl" href="{{ site.url }}/about.html">DIARY</a></a></li>
+    </ul>
+</div></center>
 
-        <!-- index,list链接 -->
-
-        <center><div class="daohang">
-                <img id="indexback1" style="margin-bottom: -15%; z-index: -100;" src="{{ site.url }}/assets/img/indexback1.png" width="85%">
-                <ul class="daohanglan">
-                    <li class="daohanglist"><a class="dhl" href="{{ site.url }}/index.html">HOME</a></li>
-                    <li class="daohanglist"><a class="dhl" href="{{ site.url }}/list.html">LIST</a></a></li>
-                    <li class="daohanglist"><a class="dhl" href="{{ site.url }}/about.html">ABOUT</a></a></li>
-                </ul>
-            </div></center>
-
-        <!-- 右边侧边栏 -->
-        <div id="cebian">
-            <center><p class="category">PROFILE</p></center>
+<!-- 右边侧边栏 -->
+<div id="cebian">
+    <center><p class="category">PROFILE</p></center>
         <!-- 微博秀 -->
         <iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="https://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=6600590670&verifier=fb1fb1d5&colors=666666,ffffff,666666,DB7093,F5F5F5&dpc=1"></iframe>
-            <center><p class="category">CATEGORY</p></center>
-          <!-- 列表 -->
-            {% assign pages = site.posts | sort_natural: "initial" %}
-            <ul class="ccc" style="list-style: none;">
-                <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
-                {% for post in pages %}
-                {% if post.tag == "ka" %}
-                <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
-                    {% for post in pages %}
-                    {% if post.tag == "sa" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-            </ul>
-            <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
-                    {% for post in pages %}
-                    {% if post.tag == "ha" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-            </ul>
-            <ul class="ccc" style="list-style: none;">
-                <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
-                {% for post in pages %}
-                {% if post.tag == "ra" %}
-                <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
-                    {% for post in pages %}
-                    {% if post.tag == "huizong" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-            </ul>
-        </div>
-        <!-- 侧边栏结束 -->
+    <center><p class="category">CATEGORY</p></center>
+        <!-- 列表 -->
+        {% assign pages = site.posts | sort_natural: "initial" %}
+        <!-- ka行 -->
+        <ul class="ccc" style="list-style: none;">
+            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
+            {% for post in pages %}
+            {% if post.tag == "ka" %}
+            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <!-- sa行 -->
+        <ul class="ccc" style="list-style: none;">
+            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
+            {% for post in pages %}
+            {% if post.tag == "sa" %}
+            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <!-- ha行 -->
+        <ul class="ccc" style="list-style: none;">
+            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
+            {% for post in pages %}
+            {% if post.tag == "ha" %}
+            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <!-- ra行 -->
+        <ul class="ccc" style="list-style: none;">
+            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
+            {% for post in pages %}
+            {% if post.tag == "ra" %}
+            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <!-- 其他 -->
+        <ul class="ccc" style="list-style: none;">
+            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
+            {% for post in pages %}
+            {% if post.tag == "huizong" %}
+            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+</div>
 
-        <!-- 目录 -->
-        <div id="menu">
-            <a name="indexmiao"></a>
-            <center><div class="holder"></div></center>
-                <ul id="itemContainer" style="list-style: none;"> 
-                {% for post in site.posts %}
-                <li>
+<!-- 目录 -->
+<div id="menu">
+    <a name="indexmiao"></a>    <!-- 定位 -->
+    <center><div class="holder"></div></center>
+        <ul id="itemContainer" style="list-style: none;"> 
+            {% for post in site.posts %}
+            <li>
                 <div class="mmulu">
-                    <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
+                <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
                     <div class="mmmulu">
                     <center><a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/hoshi.png" width="3%">{{ post.title }}</a></center>
-                        <p class="icondate">{{ post.date | date_to_string }}</p>
-                        <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest }}</p></a>
+                    <p class="icondate">{{ post.date | date_to_string }} | 字数: {{ post.content.size }}</p>
+                    <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest | truncate: 50 }}</p></a>
                     </div>
                 </div>
-                </li>
-                {% endfor %}
-                </ul>
-
-                
-            <center><div class="holder"></div></center>
-        </div>
-        <!-- 目录结束 -->
-
-        <!-- 右边侧边栏 -->
-        <div id="cebian1">
-                <center><p class="category">CATEGORY</p></center>
-              <!-- 列表 -->
-                {% assign pages = site.posts | sort_natural: "initial" %}
-                <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
-                    {% for post in pages %}
-                    {% if post.tag == "ka" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul class="ccc" style="list-style: none;">
-                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
-                        {% for post in pages %}
-                        {% if post.tag == "sa" %}
-                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                        {% endif %}
-                        {% endfor %}
-                </ul>
-                <ul class="ccc" style="list-style: none;">
-                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
-                        {% for post in pages %}
-                        {% if post.tag == "ha" %}
-                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                        {% endif %}
-                        {% endfor %}
-                </ul>
-                <ul class="ccc" style="list-style: none;">
-                    <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
-                    {% for post in pages %}
-                    {% if post.tag == "ra" %}
-                    <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul class="ccc" style="list-style: none;">
-                        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
-                        {% for post in pages %}
-                        {% if post.tag == "huizong" %}
-                        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-                        {% endif %}
-                        {% endfor %}
-                </ul>
-            </div>
-            <!-- 侧边栏结束 -->
+            </li>
+            {% endfor %}
+        </ul>        
+    <center><div class="holder"></div></center>
 </div>
+
+<!-- 下方侧边栏 -->
+<div id="cebian1">
+    <center><p class="category">CATEGORY</p></center>
+    <!-- 列表 -->
+    {% assign pages = site.posts | sort_natural: "initial" %}
+    <ul class="ccc" style="list-style: none;">
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
+        {% for post in pages %}
+        {% if post.tag == "ka" %}
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <ul class="ccc" style="list-style: none;">
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
+        {% for post in pages %}
+        {% if post.tag == "sa" %}
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <ul class="ccc" style="list-style: none;">
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
+        {% for post in pages %}
+        {% if post.tag == "ha" %}
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <ul class="ccc" style="list-style: none;">
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
+        {% for post in pages %}
+        {% if post.tag == "ra" %}
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <ul class="ccc" style="list-style: none;">
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
+        {% for post in pages %}
+        {% if post.tag == "huizong" %}
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+</div>
+
+</div>
+
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=11438127; 
@@ -264,11 +253,8 @@ src="//c.statcounter.com/11438127/0/a8c2e79d/1/" alt="free
 web stats"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
-        <div id="footer"><center>© 2017-2018 BlueMarmle</center></div>
+<!-- footer -->
+<div id="footer"><center>© 2017-2018 BlueMarmle</center></div>
 
 </body>
-
-
-
-
 </html>
