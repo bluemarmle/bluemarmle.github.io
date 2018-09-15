@@ -1,10 +1,9 @@
 ---
-title: 《三国恋戦記～オトメの兵法～》- 角色别感想 ＊子龍＊
+title: 三国恋戦記～オトメの兵法～ - 角色别感想 ＊子龍＊
 surtitle: 三国恋戦記～オトメの兵法～ ＊子龍＊
 icon: sangoku_otome_shiryuu
 digest: (つД｀)･ﾟ･最后泪崩的线，一点不虐！真的一点都不虐！！
-initial: sangokurensenkiotomeshiryu
-tag: sa
+category: さ行
 ---
 
 ## 軍議

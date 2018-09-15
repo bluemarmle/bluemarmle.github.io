@@ -1,9 +1,54 @@
 #disqus_thread{
     width: 80%;
     height: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 0.9em;
 }
+
+/* 前页后页 */
+div.prenext{
+    overflow: hidden;
+    margin: 5% 5% 0% 5%;
+}
+a.pre{
+    float: right;
+    text-decoration: none;
+    text-align: right;
+    width: 40%;
+    padding: 2% 1% 2% 1%;
+    color: white;
+}
+a:link.pre{
+    background-color: #008B8B;
+    transition: 1s;
+}
+a:visited.pre{
+    background-color: #008B8B;
+}
+a:hover.pre{
+    background-color: #20B2AA;
+    transition: 1s;
+}
+a.next{
+    float: left;
+    text-decoration: none;
+    text-align: left;
+    width: 40%;
+    padding: 2% 1% 2% 1%;
+    color: white;
+}
+a:link.next{
+    background-color: #008B8B;
+    transition: 1s;
+}
+a:visited.next{
+    background-color: #008B8B;
+}
+a:hover.next{
+    background-color: #20B2AA;
+    transition: 1s;
+}
+
 
 /* pc屏幕大小 */
 @media screen and (min-width: 1024px){
@@ -378,9 +423,6 @@ footer{
     margin-top: 5%;
     }
     
-    
-    
-    
 /* 内容样式 */
 div.content{    /* 整体 */
     margin-top: 8%;
@@ -471,7 +513,6 @@ div.content{    /* 整体 */
         margin: 50px 0 !important;
     }
     /* end quote */
-
 /* end内容设定 */
 
 /* back */
@@ -509,6 +550,7 @@ a.back:hover{
     transition: 1s;
 }
 /* end top/bottom */
+
 }
 
 /* phone屏幕大小 */

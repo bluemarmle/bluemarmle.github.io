@@ -136,60 +136,28 @@
         <iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="https://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=6600590670&verifier=fb1fb1d5&colors=666666,ffffff,666666,DB7093,F5F5F5&dpc=1"></iframe>
     <center><p class="category">CATEGORY</p></center>
         <!-- 列表 -->
-        {% assign pages = site.posts | sort_natural: "initial" %}
-        <!-- ka行 -->
+        {% assign posts_initial = site.posts | sort :"initial" %}
+        {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
+        {% for group in groups %}
         <ul class="ccc" style="list-style: none;">
-            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
-            {% for post in pages %}
-            {% if post.tag == "ka" %}
+            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">{{ group.name }}({{ group.items.size }})</li>
+            {% for post in group.items %}
             <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-            {% endif %}
             {% endfor %}
         </ul>
-        <!-- sa行 -->
-        <ul class="ccc" style="list-style: none;">
-            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
-            {% for post in pages %}
-            {% if post.tag == "sa" %}
-            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        <!-- ha行 -->
-        <ul class="ccc" style="list-style: none;">
-            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
-            {% for post in pages %}
-            {% if post.tag == "ha" %}
-            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        <!-- ra行 -->
-        <ul class="ccc" style="list-style: none;">
-            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
-            {% for post in pages %}
-            {% if post.tag == "ra" %}
-            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        <!-- 其他 -->
-        <ul class="ccc" style="list-style: none;">
-            <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
-            {% for post in pages %}
-            {% if post.tag == "huizong" %}
-            <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+        {% endfor %}
 </div>
 
 <!-- 目录 -->
 <div id="menu">
     <a name="indexmiao"></a>    <!-- 定位 -->
     <center><div class="holder"></div></center>
+        {% assign sort_date_forward = site.posts | sort: "date" %}
+        {% assign sort_date_backward = site.posts | sort: "date" | reverse %}
+        {% assign sort_alphabet_forward = site.posts | sort: "name" %}
+        {% assign sort_alphabet_backward = site.posts | sort: "name" | reverse %}
         <ul id="itemContainer" style="list-style: none;"> 
-            {% for post in site.posts %}
+            {% for post in sort_date_backward %}
             <li>
                 <div class="mmulu">
                 <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
@@ -207,49 +175,17 @@
 
 <!-- 下方侧边栏 -->
 <div id="cebian1">
-    <center><p class="category">CATEGORY</p></center>
     <!-- 列表 -->
-    {% assign pages = site.posts | sort_natural: "initial" %}
+    {% assign posts_initial = site.posts | sort :"initial" %}
+    {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
+    {% for group in groups %}
     <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">か行</li>
-        {% for post in pages %}
-        {% if post.tag == "ka" %}
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">{{ group.name }}({{ group.items.size }})</li>
+        {% for post in group.items %}
         <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-        {% endif %}
         {% endfor %}
     </ul>
-    <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">さ行</li>
-        {% for post in pages %}
-        {% if post.tag == "sa" %}
-        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-    <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">は行</li>
-        {% for post in pages %}
-        {% if post.tag == "ha" %}
-        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-    <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">ら行</li>
-        {% for post in pages %}
-        {% if post.tag == "ra" %}
-        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-    <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">其他</li>
-        {% for post in pages %}
-        {% if post.tag == "huizong" %}
-        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
+    {% endfor %}
 </div>
 
 <!-- to top/bottom -->
@@ -258,25 +194,6 @@
 </div>
 
 </div>
-
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=11438127; 
-var sc_invisible=1; 
-var sc_security="a8c2e79d"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="free web stats"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11438127/0/a8c2e79d/1/" alt="free
-web stats"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-
 <!-- footer -->
 <div id="footer"><center>© 2017-2018 BlueMarmle</center></div>
 

@@ -1,10 +1,9 @@
 ---
-title: 《Collar×Malice》 ＊アドニス&其他＊
+title: Collar×Malice ＊アドニス&其他＊
 surtitle: Collar×Malice ＊アドニス&其他＊
 icon: collarmalice_adonis
-initial: cmadonis
 digest: 市香、adonis及x-days的大家感想集合☆
-tag: ka
+category: か行
 ---
 
 ## Chapter. 0
