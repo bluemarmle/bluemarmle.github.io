@@ -21,6 +21,28 @@
                 /* 结束 */
         
             </style>
+
+            <script src="https://code.jquery.com/jquery-1.8.1.min.js"></script> <!-- jquery -->
+            <script src="{{ site.url }}/assets/jPages.js"></script>
+            <script>
+                    //back to top or bottom
+                    $("#back-top").hide();
+                    $(document).ready(function () {
+                        $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                        } else {
+                        $('#back-top').fadeOut();
+                        }
+                        });
+                        $('#back-top a').click(function () {
+                        $('body,html').animate({
+                        scrollTop: 0
+                        }, 800);
+                        return false;
+                        });
+                        });
+            </script>
         </head>
         
         <body>
@@ -139,7 +161,10 @@
 
                     </div>
 
-        
+        <!-- to top/bottom -->
+<div id="back-top">
+    <a href="#top" title="回到顶部"></a>
+</div>
         
         
         </div>

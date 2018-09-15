@@ -146,7 +146,29 @@ a:hover.listsite{
     text-decoration-line: none; color:#483D8B; font-size: 1.3em; background-color: #FDF5E6;
 }
 
-
+/* to top/bottom */
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+#back-top a:hover {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top1.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+/* end top/bottom */
 }
 
 @media screen and (max-width: 750px){

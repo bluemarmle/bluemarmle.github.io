@@ -11,6 +11,30 @@ a:visited.shoucang{
 }
 /* end 收藏 */
 
+/* to top/bottom */
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+#back-top a:hover {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top1.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+/* end top/bottom */
+
 /* pc */
 @media screen and (min-width: 1024px){
 /* 整体 */
@@ -230,6 +254,30 @@ div.mmmulu{     /* 二阶子集 */
     width: 100%;
 }
 /* end footer */
+
+/* to top/bottom */
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+#back-top a:hover {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top1.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+/* end top/bottom */
 }
 
 /* pad */
@@ -453,6 +501,30 @@ div.mmmulu{
     width: 100%;
 }
 /* end footer */
+
+/* to top/bottom */
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+#back-top a:hover {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top1.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+/* end top/bottom */
 }
 
 /* phone */
@@ -667,5 +739,11 @@ div.mmmulu{
     width: 100%;
 }
 /* end footer */
+
+/* to top/bottom */
+#back-top {
+    display: none;
+}
+/* end top/bottom */
 }
 

@@ -80,6 +80,24 @@
             alert('(づ′▽`)づ 泥萌使用的浏览器不支持js添加，请手动按星星/收藏键啦')
             }
         }
+    
+        //back to top or bottom
+        $("#back-top").hide();
+        $(document).ready(function () {
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+            $('#back-top').fadeIn();
+            } else {
+            $('#back-top').fadeOut();
+            }
+            });
+            $('#back-top a').click(function () {
+            $('body,html').animate({
+            scrollTop: 0
+            }, 800);
+            return false;
+            });
+            });
     </script>
 </head>
 
@@ -232,6 +250,11 @@
         {% endif %}
         {% endfor %}
         </ul>
+</div>
+
+<!-- to top/bottom -->
+<div id="back-top">
+    <a href="#top" title="回到顶部"></a>
 </div>
 
 </div>

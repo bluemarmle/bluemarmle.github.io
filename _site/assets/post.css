@@ -237,6 +237,29 @@ footer{
 }
 /* end footer */
 
+/* to top/bottom */
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+#back-top a:hover {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top1.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+/* end top/bottom */
 }
 
 /* pad屏幕大小 */
@@ -462,6 +485,30 @@ a.back:hover{
     background-color: #F0F8FF;
 }
 /* end back */ 
+
+/* to top/bottom */
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+#back-top a:hover {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url(img/to_top1.png) no-repeat center center;
+    background-size: 100%;
+    transition: 1s;
+}
+/* end top/bottom */
 }
 
 /* phone屏幕大小 */
@@ -674,4 +721,10 @@ footer{
     margin-top: 5%;
 }
 /* end footer */
+
+/* to top/bottom */
+#back-top {
+    display: none;
+}
+/* end top/bottom */
 }
