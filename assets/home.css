@@ -174,7 +174,7 @@ div.mmmulu{     /* 二阶子集 */
     /* date */
     p.icondate{
         color: #E1E5EA;
-        font-size: 0.7em;
+        font-size: 0.8em;
         text-align: center;
     }
     /* digest */
@@ -184,7 +184,6 @@ div.mmmulu{     /* 二阶子集 */
         color: #A9A9A9;
         text-align: center;
         text-indent: 0;
-        float: center;
         margin-left: 10%; 
         margin-right: 10%;
     }
@@ -370,7 +369,7 @@ div.mmmulu{
     /* link */
     a.mulu{
         color: #737070;
-        font-size: 0.8em;
+        font-size: 1em;
     }
     a:link.mulu{
         text-decoration: none;
