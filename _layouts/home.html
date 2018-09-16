@@ -115,7 +115,7 @@
     >乙女、RPGゲーム感想、慢速攻略、幻想的彼端<<br>
     <a class="shoucang" href="#" onclick="addBookmark('https://www.bluemarmle.com','BlueMarmle')">·收藏</a>
     ·联络: blaumurmel@163.com
-    <a class="shoucang" href="{{ site.url }}/unilearned">·Unilearned</a>
+    <a class="shoucang" href="{{ site.url }}unilearned">·Unilearned</a>
     </p>
 </div></center>
 
@@ -131,9 +131,12 @@
 
 <!-- 右边侧边栏 -->
 <div id="cebian">
-    <center><p class="category">PROFILE</p></center>
-        <!-- 微博秀 -->
-        <iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="https://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=6600590670&verifier=fb1fb1d5&colors=666666,ffffff,666666,DB7093,F5F5F5&dpc=1"></iframe>
+    <center><p class="category">シオン</p></center>
+        <center><p id="shoukai">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现居海外，主推非校园类乙女げー、《クリミナーレ!》系列抓<br \>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请随时轻松地联系我/评论<br \>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;※ 严禁内容转载
+        </p></center>
     <center><p class="category">CATEGORY</p></center>
         <!-- 列表 -->
         {% assign posts_initial = site.posts | sort :"initial" %}
@@ -176,6 +179,7 @@
 <!-- 下方侧边栏 -->
 <div id="cebian1">
     <!-- 列表 -->
+    <center><p class="category">CATEGORY</p></center>
     {% assign posts_initial = site.posts | sort :"initial" %}
     {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
     {% for group in groups %}

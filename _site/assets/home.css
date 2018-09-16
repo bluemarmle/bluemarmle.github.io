@@ -35,6 +35,14 @@ a:visited.shoucang{
 }
 /* end top/bottom */
 
+#shoukai{
+    font-size: 0.8em;
+    color: #A9A9A9;
+    text-align: left;
+    line-height: 1.8em;
+    padding: 0 8% 5% 8%;
+}
+
 /* pc */
 @media screen and (min-width: 1024px){
 /* 整体 */
@@ -112,6 +120,7 @@ p.category{     /* title category & profile */
     border-bottom-style: dotted;
     border-width:1px;
     color: #666666;
+    line-height: 1.5em;
 }
 ul.ccc{     /* gyo */
     margin-right: 2%;
