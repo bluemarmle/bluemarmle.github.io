@@ -1,12 +1,11 @@
 ---
-title: ハートの国のアリス - 角色别感想 ＊Boris＊
+title: ハートの国のアリス 角色别感想 ＊Boris＊
 surtitle: ハートの国のアリス ＊Boris＊
 icon: heart_alice_boris
 digest: 一周目Boris线感想，从爱丽丝这个无敌巨坑向上爬了1厘米=-=，决定下周目开始看攻略了。
 category: は行
+tags: QuinRoseアリスシリース ハートの国のアリス
 ---
-
-
 
 ## CHAPTER. 0
 

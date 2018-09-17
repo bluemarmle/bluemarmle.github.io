@@ -130,6 +130,10 @@ li.gyo{
     font-size: 0.9em;
     color: #E6E6FA;
 }
+li.tags{
+    color: #977FB7;
+    font-size: 0.8em;
+}
     /* link */
     a.cebianlan{
         color: #977FB7;

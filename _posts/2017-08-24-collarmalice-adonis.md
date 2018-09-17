@@ -1,9 +1,10 @@
 ---
-title: Collar×Malice ＊アドニス&其他＊
+title: Collar×Malice 角色别感想 ＊アドニス&其他＊
 surtitle: Collar×Malice ＊アドニス&其他＊
 icon: collarmalice_adonis
 digest: 市香、adonis及x-days的大家感想集合☆
 category: か行
+tags: Collar×Malice
 ---
 
 ## Chapter. 0
