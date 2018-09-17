@@ -139,7 +139,7 @@
         </p></center>
     <center><p class="category">CATEGORY</p></center>
         <!-- 列表 -->
-        {% assign posts_initial = site.posts | sort :"initial" %}
+        {% assign posts_initial = site.posts | sort :"title" %}
         {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
         {% for group in groups %}
         <ul class="ccc" style="list-style: none;">
@@ -180,7 +180,7 @@
 <div id="cebian1">
     <!-- 列表 -->
     <center><p class="category">CATEGORY</p></center>
-    {% assign posts_initial = site.posts | sort :"initial" %}
+    {% assign posts_initial = site.posts | sort :"title" %}
     {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
     {% for group in groups %}
     <ul class="ccc" style="list-style: none;">
