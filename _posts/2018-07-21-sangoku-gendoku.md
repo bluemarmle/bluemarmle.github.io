@@ -1,5 +1,5 @@
 ---
-title: 三国恋戦記～オトメの兵法～ 角色别感想 ＊玄德＊
+title: 『三国恋戦記～オトメの兵法～』 角色别感想 ＊玄德＊
 surtitle: 三国恋戦記～オトメの兵法～ ＊玄德＊
 icon: sangoku_otome_genndoku
 digest: 甜中带酸酸中带甜的物语~
