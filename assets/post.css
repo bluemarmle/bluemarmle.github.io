@@ -55,6 +55,7 @@ a:hover.next{
     text-align: left;
     line-height: 1.8em;
     padding: 0 8% 5% 8%;
+    text-indent: 0;
 }
 
 
@@ -135,16 +136,14 @@ div.daohang{    /* 导航栏块整体设定 */
     padding: 1%;
 }
 
-h6.category{    /* category, profil文字样式 */
+p.category{     /* title category & profile */
     font-size: 2em;
     border-bottom-style: dotted;
     border-width:1px;
     color: #666666;
-    height: 1.5em;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    line-height: 1.5em;
+    text-indent: 0;
 }
-
     /* 侧边栏内链接设定 */
     a.cebianlan{
     color: #977FB7;
@@ -345,14 +344,13 @@ body{
     padding: 1%;
 }
 
-h6.category{    /* category&profile样式 */
+p.category{     /* title category & profile */
     font-size: 2em;
     border-bottom-style: dotted;
     border-width:1px;
     color: #666666;
-    height: 1.5em;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    line-height: 1.5em;
+    text-indent: 0;
 }
     /* 侧边栏链接 */
     a.cebianlan{
@@ -599,15 +597,14 @@ div.all{    /* 白色透明层 */
     margin-right: auto;
     padding: 1%;
 }
-h6.category{    /* title Category&Profile */
+p.category{     /* title category & profile */
     font-size: 2em;
     border-bottom-style: dotted;
     border-width:1px;
     color: #666666;
-    height: 1.5em;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    }
+    line-height: 1.5em;
+    text-indent: 0;
+}
     /* link */
     a.cebianlan{
         color: #977FB7;
