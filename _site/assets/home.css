@@ -43,6 +43,13 @@ a:visited.shoucang{
     padding: 0 8% 5% 8%;
 }
 
+#layla{
+    font-size: 1.5em;
+    color: #7C5192;
+    margin: 0.5em;
+    text-indent: 0;
+}
+
 /* pc */
 @media screen and (min-width: 1024px){
 /* 整体 */
