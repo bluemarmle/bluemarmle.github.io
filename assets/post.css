@@ -208,6 +208,8 @@ div.neirong{    /* 正文样式设定 */
     font-size: 1.5em;
     color: #778899;
     font-weight: normal;
+    padding-left: 3%;
+    padding-right: 3%;
     }
     h1{
     font-size: 2em;
@@ -453,7 +455,8 @@ div.content{    /* 整体 */
         font-size: 1.5em;
         color: #778899;
         font-weight: normal;
-    
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     /* 正文 */
@@ -718,7 +721,8 @@ div.neirong{
         font-size: 1em;
         color: #778899;
         font-weight: normal;
-    
+        padding-left: 3%;
+        padding-right: 3%;
     }
     p{
         font-size: 0.95em;

@@ -180,6 +180,7 @@ div.mmulu{      /* 一阶子集 */
     border-width: 1px;
     border-color: #FDF5E6;
     border-radius: 15px;
+    padding-right: 2%;
 }
 div.mmmulu{     /* 二阶子集 */
     margin-top: 5%;
