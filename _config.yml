@@ -1,9 +1,9 @@
 # Welcome to Jekyll!
-title: BlueMarmle
-email: bluemamrmle@163.com
+title: LaylasBlog
+email: morgen_he@163.com
 description:  # this means to ignore newlines until "baseurl:"
 baseurl: / # the subpath of your site, e.g. /blog
-url: https://www.bluemarmle.com # the base hostname & protocol for your site, e.g. http://example.com
+url: https://www.layllla.com # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 
 # Build settings
