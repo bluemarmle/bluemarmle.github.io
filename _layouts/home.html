@@ -99,6 +99,10 @@
             });
             });
     </script>
+
+    <!-- 计数 -->
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 </head>
 
 <body>
@@ -112,7 +116,7 @@
 <center><div id="toupai">
     <h1>{{ site.title }}</h1>     <!-- name of your site, can be replaced in file _config.yml -->
     <p class="jianshu">            <!-- description, can be replaced as a var in _config.yml -->
-    >乙女游戏感想、慢速攻略、幻想的彼端<<br>
+    > 乙女游戏、抓马感想、幻想的彼端 | ※ 原地址: bluemarmle <<br>
     <a class="shoucang" href="#" onclick="addBookmark('https://www.bluemarmle.com','BlueMarmle')">·收藏</a>
     ·联络: {{ site.email }}
     </p>
@@ -170,7 +174,7 @@
                 <div class="mmulu">
                 <a href="{{ post.url }}"><img class="muluicon" src="{{ site.url }}/assets/img/posticon/{{ post.icon }}.png"></a>
                     <div class="mmmulu">
-                    <center><a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/hoshi.png" width="3%">{{ post.title }}</a></center>
+                    <center><a class="mulu" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/vor.png" width="3%">{{ post.title }}</a></center>
                     <p class="icondate">{{ post.date | date_to_string }} | 字数: {{ post.content.size }}</p>
                     <a class="digesta" href="{{ post.url }}"><p class="digest">{{ post.digest | truncate: 50 }}</p></a>
                     </div>
@@ -204,7 +208,12 @@
 
 </div>
 <!-- footer -->
-<div id="footer"><center>© 2017-2019 LaylasBlog</center></div>
+<div id="footer">
+    <center>
+        © 2017-2019 LaylasBlog | <span id="busuanzi_container_site_uv">viewer <span id="busuanzi_value_site_uv"></span></span>
+
+    </center>
+</div>
 
 </body>
 </html>

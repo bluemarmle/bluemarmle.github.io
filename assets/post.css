@@ -260,13 +260,17 @@ div.neirong{    /* 正文样式设定 */
 
     /* 引用设定 */
     blockquote{
-    color: #999999;
-    background-color: #fcfcfc;
+    font-size: 0.9em;
+    color: #BC8F8F;
+    background-color: #FFFCF7;
     padding-left: 3%;
     border-left-style: solid;
     border-left-width: 3px;
-    border-left-color: #c3c4c5;
+    border-left-color: #FAF0E6;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
     margin: 5%;
+    font-style: italic;
     }
 
     hr {
@@ -516,13 +520,17 @@ div.content{    /* 整体 */
 
     /* quote */
     blockquote{
-        color: #999999;
-        background-color: #fcfcfc;
+        font-size: 0.9em;
+        color: #BC8F8F;
+        background-color: #FFFCF7;
         padding-left: 3%;
         border-left-style: solid;
         border-left-width: 3px;
-        border-left-color: #c3c4c5;
+        border-left-color: #FAF0E6;
+        padding-top: 0.1%;
+        padding-bottom: 0.1%;
         margin: 5%;
+        font-style: italic;
     } 
     hr {
         margin: 50px 0 !important;
@@ -746,13 +754,17 @@ div.neirong{
     }
     /* 引用 */
     blockquote{
-        color: #999999;
-        background-color: #fcfcfc;
+        font-size: 0.9em;
+        color: #BC8F8F;
+        background-color: #FFFCF7;
         padding-left: 3%;
         border-left-style: solid;
         border-left-width: 3px;
-        border-left-color: #c3c4c5;
+        border-left-color: #FAF0E6;
+        padding-top: 0.1%;
+        padding-bottom: 0.1%;
         margin: 5%;
+        font-style: italic;
     }
     hr {
         margin: 50px 0 !important;
