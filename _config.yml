@@ -1,9 +1,11 @@
 # Welcome to Jekyll!
 title: LaylasBlog
 email: morgen_he@163.com
-description:  # this means to ignore newlines until "baseurl:"
+description:  乙女游戏&抓马感想、幻想的彼端  # this means to ignore newlines until "baseurl:"
 baseurl: / # the subpath of your site, e.g. /blog
 url: https://www.layllla.com # the base hostname & protocol for your site, e.g. http://example.com
+keywords: 乙女,游戏,感想,抓马,layla,bluemarmle,百合,layllla
+selfdescription: 成人済み ☆ 乙女&百合游戏中毒者 ☆ 业余画手兼同人写手 ☆ 本业工程师
 #twitter_username: jekyllrb
 
 # Build settings

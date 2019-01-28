@@ -2,15 +2,17 @@
 <html>
 <head>
     <title>{{ site.title }} ～乙女游戏感想、慢速攻略～</title>  <!-- 网页标签，搜索引擎使用 -->
+    <meta name="description" content="{{ site.description }}"> <!-- 网页描述 -->
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="Layla">
+
     <meta name="google-site-verification" content="-PQ4-2IvG5D8hVcVF2jBY5hS3n9PetMDrEqX9VL7Lic" /> <!-- Search Google -->
     <meta name="sogou_site_verification" content="VQbOjjWfc0"/><!-- Search Sougou -->
     <script src="https://code.jquery.com/jquery-1.8.1.min.js"></script> <!-- jquery -->
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">   
-    <meta name="author" conten="BlueMarmle">
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="generator" content="Visual Studio Code">
     <meta name="revised" content="bm,17/8/2017">
-    <meta name="description" content="{{ site.description }}"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 响应式网页 -->   
     <!-- all beginned with "meta" describes the site -->
     <link rel="stylesheet" href="{{ site.url }}/assets/home.css">      <!-- 与css文件链接 -->
@@ -141,7 +143,7 @@
         <center><p id="layla">|&nbsp;&nbsp;&nbsp;Layla&nbsp;&nbsp;&nbsp;|</p></center>
         <center><p id="shoukai">
             (ﾉ◕ヮ◕)ﾉ 欢迎来到博客！<br \>
-            自我介绍：成人済み ☆ 乙女&百合游戏中毒者 ☆ 业余画手兼同人写手 ☆ 本业工程师<br \>
+            自我介绍：{{ site.selfdescription }}<br \>
             <br \>
             · 感想剧透有要·注·意w！<br \>
             · 转载一万个禁止！<br \>
