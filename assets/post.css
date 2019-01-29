@@ -133,15 +133,14 @@ div.daohang{    /* 导航栏块整体设定 */
     display: none;
 }
 
-#cebian{    /* 右方目录，供大屏使用 */
+#cebian{        /* under */
     float: right;
-    width: 25%;
+    width: 27%;
+    padding-right: 4%;
     text-align: left;
     z-index: 10;
-    margin-right: 5%;
-    padding: 1%;
+    margin-top: 1.5%;
 }
-
 p.category{     /* title category & profile */
     font-size: 2em;
     border-bottom-style: dotted;
@@ -150,6 +149,21 @@ p.category{     /* title category & profile */
     line-height: 1.5em;
     text-indent: 0;
 }
+ul.ccc{     /* gyo */
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0;
+    line-height: 1.2em;
+}
+li.gyo{
+    font-size: 0.9em;
+    color: #E6E6FA;
+}
+li.tags{
+    color: #977FB7;
+    font-size: 0.8em;
+} 
+
     /* 侧边栏内链接设定 */
     a.cebianlan{
     color: #977FB7;
@@ -166,20 +180,6 @@ p.category{     /* title category & profile */
     color: #977FB7;
     font-size: 0.8em;
     text-decoration: none;
-    }
-
-    /* 按行分的目录小列表 */
-    ul.ccc{     
-    margin: 0;
-    padding: 0;
-    margin-top: 2%;
-    }
-    li.gyo{
-    font-size: 0.9em;
-    color: #E6E6FA;  
-    }
-    img.gyotu{  /* 行 小蝴蝶结图标 */
-    width: 7%;
     }
 /* 侧边栏设置结束 */
 
@@ -350,7 +350,7 @@ body{
 #cebian1{   /* 下侧边栏 */
     margin-top: 8%;
     width: 80%;
-    text-align: center;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -364,6 +364,20 @@ p.category{     /* title category & profile */
     line-height: 1.5em;
     text-indent: 0;
 }
+ul.ccc{     /* gyo */
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 0;
+    line-height: 1.2em;
+}
+li.gyo{
+    font-size: 0.9em;
+    color: #E6E6FA;
+}
+li.tags{
+    color: #977FB7;
+    font-size: 0.8em;
+} 
     /* 侧边栏链接 */
     a.cebianlan{
     color: #977FB7;
@@ -381,23 +395,15 @@ p.category{     /* title category & profile */
     font-size: 0.8em;
     text-decoration: none;
     }
-    /* 按行分的小列表 */
-    ul.ccc{
-    margin: 0;
-    padding: 0;
-    margin-top: 2%;
-    }
-    li.gyo{
-    font-size: 0.9em;
-    color: #E6E6FA; 
-    }
-    img.cbtu{
-    width: 2%;
-    }
 
-    img.gyotu{
-    width: 3%;
-    }
+#left{
+    float: left;
+    width: 45%;
+}
+#right{
+    float: right;
+    width: 45%;
+}
 /* end侧边栏 */
 
 /* 导航栏 */
@@ -439,6 +445,7 @@ footer{
     font-size: 0.5em;
     padding: 0.2%;
     margin-top: 5%;
+    clear: both;
     }
     
 /* 内容样式 */
@@ -614,6 +621,7 @@ div.all{    /* 白色透明层 */
     margin-right: auto;
     padding: 1%;
 }
+
 p.category{     /* title category & profile */
     font-size: 2em;
     border-bottom-style: dotted;
@@ -622,6 +630,21 @@ p.category{     /* title category & profile */
     line-height: 1.5em;
     text-indent: 0;
 }
+
+ul.ccc{     /* gyo */
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 0;
+    line-height: 1.2em;
+}
+li.gyo{
+    font-size: 0.9em;
+    color: #E6E6FA;
+}
+li.tags{
+    color: #977FB7;
+    font-size: 0.8em;
+} 
     /* link */
     a.cebianlan{
         color: #977FB7;
@@ -639,23 +662,6 @@ p.category{     /* title category & profile */
         font-size: 0.8em;
         text-decoration: none;
     }
-    /* list */
-    ul.ccc{
-        margin: 0;
-        padding: 0;
-        margin-top: 2%;
-    }
-    li.gyo{
-        font-size: 0.9em;
-        color: #E6E6FA;
-        
-    }
-    img.cbtu{
-        width: 2%;
-    }
-    img.gyotu{
-        width: 3%;
-    }
 /* end 侧边栏 */
 
 /* 导航栏 */
@@ -663,7 +669,7 @@ div.daohang{
     text-decoration: none;
 }
     /* 列表 */
-    ul{     /* 取消列表前空格 */
+    ul.daohanglan{     /* 取消列表前空格 */
     padding: 0;
     margin: 0;
     }    

@@ -1,6 +1,5 @@
 ---
-title: 『剣が君』 角色别感想 ＊縁＊
-surtitle: 剣が君 ＊縁＊
+title: 剣が君 ＊縁＊
 icon: kenkimi_enishi
 digest: 身命と等しきこの剣、君が為に振るう——
 category: か行

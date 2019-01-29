@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ site.title }} {{ page.title }}</title>  <!-- 网页标签，搜索引擎使用 -->
+    <title>{% if page.class == "gx" %}『感想』{% endif %}{{ page.title }} | {{ site.title }}</title>  <!-- 网页标签，搜索引擎使用 -->
     <meta name="description" content="{{ page.digest | truncate: 200 }}">
-    <meta name="keywords" content="{{ page.tags }},{{ site.keywords }}">
+    <meta name="keywords" content="{{ page.tags }},{{ site.keywords }},{{ site.title }},{{ page.title }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -65,7 +65,7 @@
     <center><p id="layla">|&nbsp;&nbsp;&nbsp;Layla&nbsp;&nbsp;&nbsp;|</p></center>
     <center><p id="shoukai">
         (ﾉ◕ヮ◕)ﾉ 欢迎来到博客！<br \>
-        自我介绍：成人済み ☆ 乙女&百合游戏中毒者 ☆ 业余画手兼同人写手 ☆ 本业工程师<br \>
+        自我介绍：{{ site.selfdescription }}<br \>
         <br \>
         · 感想剧透有要·注·意w！<br \>
         · 转载一万个禁止！<br \>
@@ -77,9 +77,9 @@
     {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
     {% for group in groups %}
     <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">{{ group.name }}({{ group.items.size }})</li>
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="5%">{{ group.name }}({{ group.items.size }})</li>
         {% for post in group.items %}
-        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="4%">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
     {% endfor %}
@@ -89,7 +89,7 @@
 <!-- contents模板-->
 <div class="content">
     <center>
-    <h4 class="page"><img src="{{ site.url }}/assets/img/aixin.png" width="2.5%">{{ page.title }}</h4>
+    <h4 class="page"><img src="{{ site.url }}/assets/img/aixin.png" width="2.5%">{% if page.class == "gx" %}『感想』{% endif %}{{ page.title }}</h4>
     <p style="color: #778899; font-size: 0.6em;">{{ page.date | date_to_string }} | 字数: {{ content.size }} | 点击：<span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span><br></p>
     <p style="color: #778899; font-size: 0.6em;line-height: 1.5em;">※所有相关内容皆为架空创作，与现实无任何关联。<br>
     作品的最终解释权属于开发商。
@@ -129,18 +129,34 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 
 <div id="cebian1">
+    <div id="left">
+    <center><p class="category">PROFILE</p></center>
+    <center><img src="{{ site.url }}/assets/img/tx.png" width = "60%"></center>
+    <center><p id="layla">|&nbsp;&nbsp;&nbsp;Layla&nbsp;&nbsp;&nbsp;|</p></center>
+    <center><p id="shoukai">
+        (ﾉ◕ヮ◕)ﾉ 欢迎来到博客！<br \>
+        自我介绍：{{ site.selfdescription }}<br \>
+        <br \>
+        · 感想剧透有要·注·意w！<br \>
+        · 转载一万个禁止！<br \>
+        · 当ブログ内で使用しているバナー・画像等は全て各会社様に帰属致します。
+    </p></center>
+    </div>
+
+    <div id="right">
     <center><p class="category">CATEGORY</p></center>
     <!-- 列表 -->
     {% assign posts_initial = site.posts | sort :"title" %}
     {% assign groups = posts_initial | group_by: "category" | sort: "name" %}
     {% for group in groups %}
     <ul class="ccc" style="list-style: none;">
-        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="7%">{{ group.name }}({{ group.items.size }})</li>
+        <li class="gyo"><img src="{{ site.url }}/assets/img/ribbon3.png" width="5%">{{ group.name }}({{ group.items.size }})</li>
         {% for post in group.items %}
-        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="5%">{{ post.surtitle }}</a></li>
+        <li><a class="cebianlan" href="{{ post.url }}"><img src="{{ site.url }}/assets/img/dot.png" width="3%">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
     {% endfor %}
+    </div>
 </div>
 
 <!-- to top/bottom -->

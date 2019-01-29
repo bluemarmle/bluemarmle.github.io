@@ -1,6 +1,5 @@
 ---
-title: 『剣が君』 角色别感想 ＊鈴懸＊
-surtitle: 剣が君 ＊鈴懸＊
+title: 剣が君 ＊鈴懸＊
 icon: kenkimi_suzukake
 category: か行
 tags: 剣が君

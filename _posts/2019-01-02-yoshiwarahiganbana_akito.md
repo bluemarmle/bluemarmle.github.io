@@ -1,6 +1,5 @@
 ---
-title: 《吉原彼岸花 久遠の契り》 ＊总体感想＊
-surtitle: 吉原彼岸花 久遠の契り
+title: 吉原彼岸花 久遠の契り
 icon: yoshiwarahiganbana
 digest: 终于all complete啦！！！
 category: や行

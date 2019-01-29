@@ -133,6 +133,7 @@ p.category{     /* title category & profile */
 ul.ccc{     /* gyo */
     margin-right: 2%;
     padding: 0;
+    line-height: 1.2em;
 }
 li.gyo{
     font-size: 0.9em;
@@ -382,6 +383,7 @@ li.daohanglist{
 ul.ccc{
     margin-right: 2%;
     padding: 0;
+    line-height: 1.2em;
 }
 li.gyo{
     font-size: 0.9em;
@@ -509,6 +511,7 @@ div.mmmulu{
 }
 .holder a{
     cursor: default;
+    text-decoration: none;
 }
 .holder a.jp-disabled,a.disabled:hover{
     color: #fafafa;
@@ -569,10 +572,7 @@ div.all{        /* white back */
     padding-bottom: 6%;
     background-color: rgba(251,251,251,0.85);
 }
-ul {        /* 消除列表前空格 */
-    margin:0;
-    padding:0;
-}
+
 #indexback1{
     display: none;
 }
@@ -606,6 +606,10 @@ div.daohang{
     margin-top: 0%;
     margin-bottom: 5%;
     text-decoration: none;
+}
+ul.daohang {        /* 消除列表前空格 */
+    margin:0;
+    padding:0;
 }
 li.daohanglist{
     display: inline-block;
@@ -645,6 +649,7 @@ li.daohanglist{
 ul.ccc{
     margin-right: 2%;
     padding: 0;
+    line-height: 1.2em;
 }
 li.gyo{
     font-size: 0.9em;
@@ -744,6 +749,7 @@ div.mmmulu{
 .holder a{
     color: #E6E6FA;
     cursor: default;
+    text-decoration: none;
 }
 .holder a:hover{
     color: #9370DB;

@@ -1,6 +1,5 @@
 ---
-title: 『Code：Realize ～祝福の未来～』 ＊全体感想＊
-surtitle: Code：Realize ～祝福の未来～
+title: Code：Realize ～祝福の未来～ ＊全体＊
 icon: coderealize_fd
 digest: 飞艇么总归要坠的，游船么总归要沉的。
 category: か行
