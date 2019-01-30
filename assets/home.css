@@ -50,7 +50,6 @@ a:visited.shoucang{
     text-indent: 0;
 }
 
-
 /* pc */
 @media screen and (min-width: 1024px){
 /* 整体 */
@@ -681,6 +680,11 @@ p.category{
 /* end 侧边栏 */
 
 /* 目录 */
+#itemContainer{
+    margin: 0;
+    padding: 0;
+}
+
 #menu{
     line-height: 2em;
     text-align: left;
