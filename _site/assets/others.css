@@ -6,7 +6,7 @@ div.mmm{
 
 body{
     background-color: white;
-    background-image: url(img/back3.png);
+    background-image: url(img/back4.png);
     background-repeat:repeat;
     background-position: top;
     background-position: center;
@@ -24,15 +24,15 @@ div.wb{
 }
 
 a:hover.dhl{
-    text-decoration: none; color: #DB7093; background-color: FLORALWHITE; border-style: solid; border-width: 1px;
+    text-decoration: none; color: #6f4d79; background-color: #ffffff; border-style: solid; border-width: 1px;
 }
 
 a:visited.dhl{
-    text-decoration: none; color: #DB7093; border-style: solid; border-width: 1px;
+    text-decoration: none; color: #6f4d79; border-style: solid; border-width: 1px;
 }
 
 a:link.dhl{
-    text-decoration: none;color: #DB7093; border-style: solid; border-width: 1px;
+    text-decoration: none;color: #6f4d79; border-style: solid; border-width: 1px;
 }
 
 ul.daohanglan{
